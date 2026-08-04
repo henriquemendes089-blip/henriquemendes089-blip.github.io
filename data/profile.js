@@ -14,10 +14,13 @@ window.PM.profile = {
   local: 'Brasil · Atendimento remoto',
   disponibilidade: 'Disponível para novos projetos',
 
-  // Trocar por uma foto profissional em assets/images/.
-  // Se o arquivo não existir, o site exibe automaticamente um monograma elegante.
+  // Foto da seção Sobre. Se o arquivo não existir, o site exibe
+  // automaticamente um monograma elegante no lugar.
   foto: 'assets/images/henrique-mendes.jpg',
-  fotoAlt: 'Retrato profissional de Henrique Mendes',
+  fotoAlt: 'Henrique Mendes em sua estação de trabalho, analisando conteúdo no celular',
+  // Deve bater com a proporção do arquivo para a imagem não ser cortada:
+  // ratio-1-1 (quadrada) · ratio-3-4 (vertical) · ratio-4-3 (horizontal)
+  fotoProporcao: 'ratio-1-1',
 
   // Colocar o PDF em assets/docs/ mantendo este nome.
   curriculo: 'assets/docs/henrique-mendes-curriculo.pdf',

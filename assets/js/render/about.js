@@ -16,11 +16,14 @@
     const portrait = el('div', { class: 'about__portrait', 'data-reveal': 'left' });
     const frame = el('div', { class: 'about__portrait-frame' });
     frame.appendChild(PM.media({
+      // Quadrado: mesma proporção do arquivo, então a foto entra sem corte.
+      // Trocando o arquivo por um retrato vertical, use 'ratio-3-4'.
       src: p.foto,
       alt: p.fotoAlt,
-      ratio: 'ratio-4-3',
+      ratio: p.fotoProporcao || 'ratio-1-1',
       mark: p.iniciais,
-      placeholder: 'Foto profissional'
+      placeholder: 'Foto profissional',
+      eager: true
     }));
     portrait.appendChild(frame);
 
