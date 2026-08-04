@@ -55,7 +55,7 @@ window.PM.experiences = [
     empresa: 'UniFECAF Ribeirão das Neves',
     cargo: 'Marketing Estratégico & Gestão de Tráfego',
     tipo: 'Prestador de serviço',
-    periodo: '2024 — Atual',
+    periodo: 'Atual',
     inicio: '2024',
     fim: 'Atual',
     atual: true,
