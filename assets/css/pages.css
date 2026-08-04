@@ -206,11 +206,15 @@
     rgba(224, 178, 92, 0.1);
   transform: rotate(45deg);
 }
+/* Marca de confirmação de verdade — a versão anterior desenhava uma
+   diagonal, que lida como símbolo de "proibido". */
 .checklist--solution li::before {
   border-color: rgba(78, 195, 138, 0.35);
-  background:
-    linear-gradient(45deg, transparent 44%, var(--ok) 44%, var(--ok) 56%, transparent 56%) center / 10px 10px no-repeat,
-    var(--ok-dim);
+  background-color: var(--ok-dim);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234ec38a' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+  background-size: 11px 11px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Resultados em destaque */
@@ -291,6 +295,9 @@
   text-transform: uppercase;
   color: var(--txt-3);
 }
+/* Sem isto o SVG assume o tamanho intrínseco e domina o card. */
+.page-nav__label svg { width: 14px; height: 14px; flex-shrink: 0; }
+.page-nav__item:hover .page-nav__label { color: var(--accent-soft); }
 .page-nav__item--next .page-nav__label { justify-content: flex-end; }
 .page-nav__title { font-size: var(--fs-h4); font-weight: 550; letter-spacing: var(--tr-snug); }
 .page-nav__item--empty { opacity: 0.4; pointer-events: none; }

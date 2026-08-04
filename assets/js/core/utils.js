@@ -215,8 +215,13 @@
   function media(opts) {
     const o = opts || {};
     const ratio = o.ratio || 'ratio-16-9';
+    // `contain`: mostra a imagem inteira dentro do quadro em vez de cortar.
+    // Essencial para prints de painel, onde o dado cortado perde o sentido.
     const wrap = el('div', {
-      class: 'media ' + ratio + (o.zoom ? ' media--zoom' : '') + (o.class ? ' ' + o.class : '')
+      class: 'media ' + ratio +
+        (o.zoom ? ' media--zoom' : '') +
+        (o.contain ? ' media--contain' : '') +
+        (o.class ? ' ' + o.class : '')
     });
 
     wrap.innerHTML =

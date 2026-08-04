@@ -22,7 +22,8 @@
       'data-reveal': 'fade'
     });
 
-    const capa = (p.galeria && p.galeria[0] && p.galeria[0].src) || p.capa || '';
+    // `capa` tem prioridade: nem sempre o melhor print é o primeiro da galeria.
+    const capa = p.capa || (p.galeria && p.galeria[0] && p.galeria[0].src) || '';
 
     const mediaWrap = el('div', { class: 'project-card__media' });
     mediaWrap.appendChild(PM.media({

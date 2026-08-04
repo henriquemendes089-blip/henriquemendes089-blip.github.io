@@ -14,37 +14,75 @@ window.PM.resultsIntro = {
   texto: 'Painel vivo da operação. Cada métrica abaixo é atualizada conforme os projetos avançam — sem estimativa, sem número inflado.'
 };
 
+/*
+ * `serie` desenha o mini-gráfico do card. Ela representa a CURVA de
+ * evolução da métrica — não são valores diários exatos. O gráfico não
+ * tem eixo nem rótulo justamente por isso: comunica tendência, não dado.
+ */
 window.PM.results = [
   {
+    id: 'alcance',
+    valor: 168050,
+    sufixo: '',
+    label: 'Contas alcançadas',
+    detalhe: 'Pessoas impactadas pelas campanhas no Meta Ads',
+    icone: 'target',
+    status: 'ativo',
+    destaque: true,
+    serie: [7450, 10952, 15566, 22169, 25556, 108436, 168050]
+  },
+  {
+    id: 'visualizacoes',
+    valor: 435900,
+    sufixo: '',
+    label: 'Visualizações geradas',
+    detalhe: 'Conteúdo exibido no Instagram e Facebook',
+    icone: 'play',
+    status: 'ativo',
+    destaque: true,
+    serie: [18000, 62000, 105000, 158000, 240000, 340000, 435900]
+  },
+  {
     id: 'seguidores',
-    valor: 2500,
+    valor: 3380,
     sufixo: '+',
     label: 'Seguidores gerados',
-    detalhe: 'Crescimento orgânico e pago em perfis gerenciados',
+    detalhe: 'Somando os perfis gerenciados, orgânico e impulsionado',
     icone: 'users',
     status: 'ativo',
     destaque: true,
-    serie: [53, 180, 420, 760, 1240, 1780, 2500]
-  },
-  {
-    id: 'leads',
-    valor: 0,
-    sufixo: '',
-    label: 'Leads gerados',
-    detalhe: 'Contatos qualificados originados de campanhas',
-    icone: 'target',
-    status: 'pendente',
-    serie: [4, 6, 5, 9, 8, 12, 14]
+    serie: [53, 420, 980, 1600, 2200, 2900, 3380]
   },
   {
     id: 'campanhas',
-    valor: 0,
+    valor: 6,
     sufixo: '',
     label: 'Campanhas gerenciadas',
-    detalhe: 'Meta Ads em captação, remarketing e reconhecimento',
+    detalhe: 'Tráfego, mensagem e sorteio — com verba e resultado auditáveis',
     icone: 'megaphone',
-    status: 'pendente',
-    serie: [2, 4, 3, 6, 7, 6, 9]
+    status: 'ativo',
+    destaque: true,
+    serie: [1, 2, 2, 3, 4, 5, 6]
+  },
+  {
+    id: 'conversas',
+    valor: 139,
+    sufixo: '',
+    label: 'Conversas iniciadas',
+    detalhe: 'Contatos diretos abertos pelas campanhas de mensagem',
+    icone: 'check',
+    status: 'ativo',
+    serie: [7, 17, 24, 39, 63, 98, 139]
+  },
+  {
+    id: 'cliques',
+    valor: 5400,
+    sufixo: '',
+    label: 'Cliques no link',
+    detalhe: 'Tráfego enviado ao link da bio e às páginas de captação',
+    icone: 'browser',
+    status: 'ativo',
+    serie: [180, 620, 1150, 1900, 2900, 4100, 5400]
   },
   {
     id: 'clientes',
@@ -57,43 +95,13 @@ window.PM.results = [
     serie: [1, 1, 2, 2, 3, 4, 5]
   },
   {
-    id: 'conversoes',
-    valor: 0,
-    sufixo: '',
-    label: 'Conversões',
-    detalhe: 'Ações concluídas no funil: formulário, contato e matrícula',
-    icone: 'check',
-    status: 'pendente',
-    serie: [3, 5, 8, 7, 11, 13, 16]
-  },
-  {
     id: 'videos',
     valor: 0,
     sufixo: '',
     label: 'Vídeos produzidos',
     detalhe: 'Captação, roteiro e edição para social e mídia paga',
-    icone: 'play',
+    icone: 'film',
     status: 'pendente',
     serie: [2, 5, 4, 8, 10, 9, 13]
-  },
-  {
-    id: 'sites',
-    valor: 0,
-    sufixo: '',
-    label: 'Sites e landing pages',
-    detalhe: 'Páginas construídas com foco em conversão',
-    icone: 'browser',
-    status: 'pendente',
-    serie: [1, 1, 2, 3, 3, 4, 6]
-  },
-  {
-    id: 'roi',
-    valor: 0,
-    sufixo: 'x',
-    label: 'ROI médio',
-    detalhe: 'Retorno sobre o investimento em mídia paga',
-    icone: 'trending',
-    status: 'pendente',
-    serie: [1, 1.4, 1.8, 2.1, 2.6, 3.0, 3.4]
   }
 ];

@@ -500,6 +500,12 @@
 }
 .media--zoom:hover img { transform: scale(1.04); }
 
+/* Print de painel: a imagem inteira precisa aparecer, então o quadro
+   recebe a imagem por completo em vez de cortá-la. */
+.media--contain { background: #0b0b10; }
+.media--contain img { object-fit: contain; padding: var(--sp-2); }
+.media--contain.media--zoom:hover img { transform: scale(1.02); }
+
 /* Placeholder exibido quando a imagem ainda não existe. */
 .media__fallback {
   position: absolute;

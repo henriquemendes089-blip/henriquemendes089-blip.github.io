@@ -61,11 +61,11 @@ window.PM.experiences = [
     atual: true,
     local: 'Ribeirão das Neves · MG',
     resumo: 'Operação completa de marketing para uma unidade educacional: estratégia, tráfego pago, conteúdo e audiovisual sob a mesma direção.',
-    contexto: 'Atuação como prestador de serviço responsável por toda a frente digital da unidade — do planejamento estratégico à execução de campanhas e produção de material.',
+    contexto: 'Atuação como prestador de serviço responsável por toda a frente digital da unidade — do planejamento estratégico à execução de campanhas e produção de material. O perfil começou sem audiência: hoje acumula 168 mil contas alcançadas e 435,9 mil visualizações, com verba de mídia enxuta e leitura semanal de número.',
     destaque: {
-      valor: '360°',
-      label: 'operação de marketing',
-      detalhe: 'estratégia, mídia, conteúdo e vídeo'
+      valor: '168 mil',
+      label: 'contas alcançadas',
+      detalhe: 'com R$ 3,1 mil investidos em mídia'
     },
     responsabilidades: [
       'Marketing Estratégico',
@@ -82,12 +82,32 @@ window.PM.experiences = [
       'Administração diária dos canais sociais'
     ],
     resultados: [
-      { valor: '—', label: 'Métricas', detalhe: 'Espaço reservado para inserir números da operação' }
+      { valor: '168.050', label: 'Contas alcançadas', detalhe: 'Somando as 6 campanhas do período' },
+      { valor: '435,9 mil', label: 'Visualizações', detalhe: 'Facebook e Instagram somados' },
+      { valor: 'R$ 0,13', label: 'Custo por visita ao perfil', detalhe: 'Melhor resultado entre as campanhas' },
+      { valor: '5,4 mil', label: 'Cliques no link', detalhe: 'Tráfego enviado ao link da bio' },
+      { valor: '139', label: 'Conversas iniciadas', detalhe: 'Contatos diretos vindos das campanhas' },
+      { valor: '+880', label: 'Seguidores no período', detalhe: 'Orgânico somado ao impulsionado' }
     ],
     tags: ['Educação', 'Meta Ads', 'Conteúdo', 'Vídeo'],
-    galeria: [],
+    galeria: [
+      { src: 'assets/images/projetos/captacao-educacional-meta-ads/01-gerenciador-meta-ads.jpg',
+        alt: 'Gerenciador de anúncios com as 6 campanhas da conta',
+        legenda: 'Gerenciador de Anúncios: 6 campanhas, 168.050 contas alcançadas.', inteira: true },
+      { src: 'assets/images/projetos/captacao-educacional-meta-ads/02-insights-instagram.jpg',
+        alt: 'Insights do Instagram com 127.046 visualizações',
+        legenda: '94,9% das visualizações vieram de não seguidores.', inteira: true },
+      { src: 'assets/images/projetos/captacao-educacional-meta-ads/03-visualizacoes-alcance.jpg',
+        alt: 'Painel com 435,9 mil visualizações e 168,3 mil de alcance',
+        legenda: '435,9 mil visualizações e 168,3 mil de alcance.', inteira: true },
+      { src: 'assets/images/projetos/captacao-educacional-meta-ads/06-perfil-instagram.jpg',
+        alt: 'Perfil da UniFECAF Ribeirão das Neves no Instagram',
+        legenda: 'O perfil da unidade, com identidade visual consistente entre as peças.', inteira: true }
+    ],
     videos: [],
-    links: []
+    links: [
+      { label: 'Ver o case completo', href: 'projects/projeto.html?slug=captacao-educacional-meta-ads' }
+    ]
   },
   {
     id: 'unifecaf-divinopolis',

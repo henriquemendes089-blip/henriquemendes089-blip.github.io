@@ -15,7 +15,8 @@
     check: 'circleCheck',
     play: 'circlePlay',
     browser: 'browser',
-    trending: 'trending'
+    trending: 'trending',
+    film: 'film'
   };
 
   /* Converte a série numérica em um caminho SVG suave. */

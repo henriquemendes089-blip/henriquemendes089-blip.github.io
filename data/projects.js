@@ -80,46 +80,89 @@ window.PM.projects = [
   },
   {
     slug: 'captacao-educacional-meta-ads',
-    titulo: 'Máquina de captação para instituição de ensino',
-    subtitulo: 'Meta Ads, CRM e otimização de conversão',
+    titulo: '168 mil pessoas alcançadas com R$ 3,1 mil em mídia',
+    subtitulo: 'Operação de tráfego e conteúdo para instituição de ensino',
     categoria: 'trafego',
     categoriaLabel: 'Tráfego Pago',
-    cliente: 'UniFECAF',
-    ano: '2022 — 2025',
-    papel: 'Gestão de tráfego e estratégia de conversão',
-    status: 'em-breve',
+    cliente: 'UniFECAF Ribeirão das Neves',
+    ano: '2024 — Atual',
+    papel: 'Estratégia, gestão de tráfego, conteúdo e audiovisual',
+    status: 'publicado',
     destaque: true,
-    resumo: 'Estruturação da jornada completa do lead — do criativo no Meta Ads ao acompanhamento no CRM — com foco em custo por matrícula, não em custo por clique.',
-    metricaCard: { valor: 'Funil', label: 'do anúncio à matrícula' },
+    resumo: 'Um perfil institucional novo transformado em canal de captação: 6 campanhas no Meta Ads, 435,9 mil visualizações e visita ao perfil a R$ 0,13 — com verba enxuta e leitura semanal de número.',
+    metricaCard: { valor: '168 mil', label: 'contas alcançadas' },
+    capa: 'assets/images/projetos/captacao-educacional-meta-ads/06-perfil-instagram.jpg',
     descricao: [
-      'Case em preparação. O espaço abaixo já está estruturado para receber prints de campanha, painéis de resultado, criativos e números da operação.'
+      'A unidade de Ribeirão das Neves precisava existir digitalmente: perfil novo, sem audiência e sem histórico de mídia. O objetivo não era volume de seguidor — era colocar a instituição na frente de quem ainda não a conhecia e levar essa pessoa até a conversa.',
+      'A operação foi montada inteira sob a mesma direção: posicionamento, linha editorial, produção de conteúdo, captação e edição de vídeo, e gestão das campanhas no Meta Ads. Com verba enxuta, a régua foi eficiência — testar formato, cortar o que não performava e reinvestir no que trazia resultado mais barato.',
+      'O ponto que mais orgulha: 94,9% das visualizações vieram de quem ainda não seguia o perfil. Ou seja, a operação não estava falando com a própria bolha — estava buscando público novo, que é exatamente o trabalho de captação.'
     ],
     objetivos: [
-      'Reduzir o custo por lead qualificado',
-      'Conectar a mídia paga ao processo comercial',
-      'Padronizar o acompanhamento no CRM',
-      'Aumentar a taxa de conversão do funil'
+      'Colocar uma unidade recém-aberta no mapa digital da região',
+      'Gerar alcance qualificado fora da base já existente',
+      'Transformar audiência em conversa direta pelo WhatsApp e Direct',
+      'Provar eficiência de mídia com orçamento reduzido'
     ],
     desafios: [
-      'Sazonalidade forte do calendário educacional',
-      'Alinhamento entre marketing e time comercial',
-      'Volume de leads sem perda de qualidade'
+      'Perfil começando do zero, sem audiência e sem histórico de anúncio',
+      'Verba enxuta — cada real precisava justificar o resultado',
+      'Nicho educacional com decisão longa: ninguém se matricula no impulso',
+      'Necessidade de volume de conteúdo mantendo padrão visual da marca'
     ],
     solucoes: [
-      'Segmentação e estrutura de campanha por etapa de funil',
-      'Testes contínuos de criativo e copy',
-      'Rotina de leitura de métricas com o time comercial',
-      'Otimização das páginas e formulários de captação'
+      'Separação das campanhas por objetivo: tráfego para descoberta, mensagem para conversa',
+      'Teste A/B contínuo de criativo, com corte rápido do que saía caro',
+      'Priorização de Reels, que respondiam por mais da metade das visualizações',
+      'Produção em bloco: uma diária de captação virando semanas de conteúdo',
+      'Controle de frequência para não queimar o mesmo público',
+      'Uso de IA para acelerar roteiro, variação de copy e organização de pauta'
     ],
     resultados: [
-      { valor: '—', label: 'Leads gerados', detalhe: 'Inserir número da operação' },
-      { valor: '—', label: 'Custo por lead', detalhe: 'Inserir número da operação' },
-      { valor: '—', label: 'Taxa de conversão', detalhe: 'Inserir número da operação' }
+      { valor: '168.050', label: 'Contas alcançadas', detalhe: 'Somando as 6 campanhas do período' },
+      { valor: '435,9 mil', label: 'Visualizações', detalhe: 'Facebook e Instagram somados' },
+      { valor: 'R$ 0,13', label: 'Custo por visita ao perfil', detalhe: 'Campanha de tráfego, o melhor resultado da conta' },
+      { valor: '5.300', label: 'Visitas ao perfil via anúncio', detalhe: 'Geradas pelas campanhas de tráfego' },
+      { valor: '5,4 mil', label: 'Cliques no link', detalhe: 'Tráfego enviado para o link da bio' },
+      { valor: '139', label: 'Conversas iniciadas', detalhe: 'Contatos diretos vindos das campanhas de mensagem' },
+      { valor: '94,9%', label: 'Alcance fora da base', detalhe: 'Visualizações de quem ainda não seguia o perfil' },
+      { valor: '+880', label: 'Seguidores no período', detalhe: 'Crescimento orgânico somado ao impulsionado' },
+      { valor: 'R$ 3.162,91', label: 'Investimento total', detalhe: 'Verba aplicada nas 6 campanhas' }
     ],
-    tecnologias: ['Meta Ads', 'CRM', 'Canva', 'CapCut'],
-    galeria: [],
+    tecnologias: ['Meta Ads', 'Instagram', 'Canva', 'CapCut', 'ChatGPT'],
+    galeria: [
+      { src: 'assets/images/projetos/captacao-educacional-meta-ads/01-gerenciador-meta-ads.jpg',
+        alt: 'Gerenciador de anúncios da Meta com as 6 campanhas, alcance de 168.050 contas e R$ 3.162,91 investidos',
+        legenda: 'Gerenciador de Anúncios: 6 campanhas, 168.050 contas alcançadas e R$ 3.162,91 de investimento total.',
+        inteira: true },
+      { src: 'assets/images/projetos/captacao-educacional-meta-ads/02-insights-instagram.jpg',
+        alt: 'Insights do Instagram com 127.046 visualizações e 55.153 contas alcançadas',
+        legenda: '94,9% das visualizações vieram de não seguidores — alcance de descoberta, não de bolha. Reels responderam por 54,2%.',
+        inteira: true },
+      { src: 'assets/images/projetos/captacao-educacional-meta-ads/03-visualizacoes-alcance.jpg',
+        alt: 'Painel com 435,9 mil visualizações e 168,3 mil de alcance',
+        legenda: '435,9 mil visualizações e 168,3 mil de alcance no período.',
+        inteira: true },
+      { src: 'assets/images/projetos/captacao-educacional-meta-ads/04-interacoes-cliques.jpg',
+        alt: 'Painel com 7,6 mil interações e 5,4 mil cliques no link',
+        legenda: '7,6 mil interações com o conteúdo e 5,4 mil cliques no link da bio.',
+        inteira: true },
+      { src: 'assets/images/projetos/captacao-educacional-meta-ads/05-visitas-seguidores.jpg',
+        alt: 'Painel com 7,9 mil visitas ao perfil e 880 novos seguidores',
+        legenda: '7,9 mil visitas ao perfil e 880 novos seguidores no período.',
+        inteira: true },
+      { src: 'assets/images/projetos/captacao-educacional-meta-ads/06-perfil-instagram.jpg',
+        alt: 'Perfil da UniFECAF Ribeirão das Neves no Instagram com 43 publicações e 928 seguidores',
+        legenda: 'O perfil hoje: identidade visual consistente entre as peças e mistura de Reels, carrosséis e vídeos de captação.',
+        inteira: true },
+      { src: 'assets/images/projetos/captacao-educacional-meta-ads/07-post-exemplo.jpg',
+        alt: 'Publicação da campanha com a mensagem sobre o medo de começar uma faculdade',
+        legenda: 'Exemplo de peça: conteúdo que ataca a objeção real do público — o medo de começar — em vez de falar da instituição.',
+        inteira: true }
+    ],
     videos: [],
-    links: []
+    links: [
+      { label: 'Ver perfil no Instagram', href: 'https://instagram.com/unifecaf.conhecer', principal: true }
+    ]
   },
   {
     slug: 'producao-audiovisual',

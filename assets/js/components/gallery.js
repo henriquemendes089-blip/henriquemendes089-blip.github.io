@@ -37,6 +37,7 @@
         src: it.src,
         alt: it.alt || '',
         ratio: it.ratio || (it.mockup === 'celular' ? 'ratio-9-16' : 'ratio-16-9'),
+        contain: it.inteira === true,
         zoom: true,
         mark: o.mark,
         placeholder: 'Imagem em breve'
