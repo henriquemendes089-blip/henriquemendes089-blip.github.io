@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://henriquemendes089-blip.github.io/sitemap.xml

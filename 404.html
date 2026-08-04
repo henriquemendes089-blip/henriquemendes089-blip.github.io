@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050507">
+<meta name="robots" content="noindex, follow">
+<title>Página não encontrada — Henrique Mendes</title>
+<meta name="description" content="A página que você procura não existe ou foi movida.">
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<!-- Estilos embutidos: o 404 é servido em qualquer caminho e precisa
+     funcionar mesmo quando os arquivos relativos não resolvem. -->
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  *{margin:0;padding:0}
+  body{
+    min-height:100svh;display:grid;place-items:center;text-align:center;
+    padding:2rem 1.5rem;background:#050507;color:#f4f5f7;
+    font-family:'Inter Tight',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  body::before{
+    content:'';position:fixed;inset:0;pointer-events:none;
+    background:
+      radial-gradient(60rem 34rem at 50% -8%,rgba(90,131,240,.14),transparent 62%),
+      linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px) 0 0/68px 68px,
+      linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px) 0 0/68px 68px;
+    -webkit-mask-image:radial-gradient(75% 60% at 50% 20%,#000,transparent 78%);
+    mask-image:radial-gradient(75% 60% at 50% 20%,#000,transparent 78%);
+  }
+  .wrap{position:relative;display:grid;gap:1.5rem;justify-items:center;max-width:46ch}
+  .code{
+    font-family:'JetBrains Mono',monospace;font-size:clamp(4rem,2rem + 12vw,9rem);
+    font-weight:700;letter-spacing:-.04em;line-height:1;
+    background:linear-gradient(180deg,#fff 25%,#3b3f4a 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;font-size:.78rem;letter-spacing:.14em;
+    text-transform:uppercase;color:#8fa9f7;
+  }
+  h1{font-size:clamp(1.5rem,1.1rem + 2vw,2.25rem);font-weight:500;letter-spacing:-.03em;line-height:1.15}
+  p{color:#9ea3ae;font-size:1.0625rem}
+  .actions{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:.75rem}
+  a.btn{
+    display:inline-flex;align-items:center;gap:.5rem;min-height:46px;padding:0 1.5rem;
+    border-radius:999px;font-size:.9375rem;font-weight:500;text-decoration:none;
+    border:1px solid rgba(255,255,255,.11);color:#f4f5f7;
+    transition:background 260ms cubic-bezier(.4,0,.2,1),border-color 260ms cubic-bezier(.4,0,.2,1);
+  }
+  a.btn:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18)}
+  a.btn--primary{
+    background:linear-gradient(180deg,#f7f8fa,#dfe3ea);color:#050507;
+    border-color:transparent;font-weight:600;
+  }
+  a.btn--primary:hover{background:#fff}
+  a.btn:focus-visible{outline:2px solid #8fa9f7;outline-offset:3px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="code">404</span>
+    <span class="eyebrow">Rota inexistente</span>
+    <h1>Essa página saiu do ar — ou nunca esteve nele.</h1>
+    <p>O endereço que você acessou não existe. Volte para o início e continue navegando pelo portfólio.</p>
+    <div class="actions">
+      <a class="btn btn--primary" href="/">Voltar ao início</a>
+      <a class="btn" href="/#projetos">Ver projetos</a>
+      <a class="btn" href="/#contato">Contato</a>
+    </div>
+  </div>
+</body>
+</html>
