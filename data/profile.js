@@ -66,11 +66,11 @@ window.PM.profile = {
     ]
   },
 
-  // Chips exibidos ao lado da foto na seção Sobre
+  // Chips exibidos abaixo da foto na seção Sobre
   destaques: [
-    { valor: '5+', label: 'anos em marketing e vendas' },
-    { valor: '2.5K+', label: 'seguidores gerados em 5 meses' },
-    { valor: '4', label: 'operações estruturadas do zero' }
+    { valor: '+4', label: 'anos de mercado' },
+    { valor: '+R$ 100 mil', label: 'geridos em anúncios' },
+    { valor: '+6', label: 'empresas estruturadas do zero' }
   ],
 
   seo: {
