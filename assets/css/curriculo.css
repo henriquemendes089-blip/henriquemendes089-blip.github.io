@@ -1,0 +1,302 @@
+/* ============================================================
+   CURRÍCULO — folha A4 para leitura em tela e impressão.
+
+   Fundo claro de propósito: currículo é documento que recruta-
+   dor encaminha, abre no celular e às vezes imprime. Tema
+   escuro gastaria tinta e prejudicaria a leitura. A identidade
+   vem da tipografia e do azul de acento, não do fundo.
+   ============================================================ */
+
+:root {
+  --cv-ink: #14161a;
+  --cv-ink-2: #4a4f58;
+  --cv-ink-3: #767c86;
+  --cv-line: #e2e5ea;
+  --cv-line-2: #eef0f3;
+  --cv-accent: #2f5fd0;
+  --cv-accent-soft: #eaf0fd;
+  --cv-bg: #ffffff;
+
+  --cv-sans: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --cv-serif: 'Instrument Serif', Georgia, serif;
+  --cv-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Tela e impressão usam EXATAMENTE o mesmo layout.
+
+   Havia aqui uma simulação de folha (fundo cinza, sombra, largura fixa
+   de 210mm). Ela quebrava o PDF: geradores headless montam a página no
+   modo `screen`, então a folha de 210mm não cabia na área imprimível e
+   o currículo escorria para uma terceira página.
+
+   Agora a coluna tem 175mm — cabe dentro dos 180mm imprimíveis do A4 —
+   e as margens da página vêm da @page. Sem dois caminhos, sem surpresa. */
+body {
+  background: var(--cv-bg);
+  color: var(--cv-ink);
+  font-family: var(--cv-sans);
+  font-size: 10pt;
+  line-height: 1.5;
+  letter-spacing: -0.006em;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+}
+
+ul { list-style: none; }
+a { color: inherit; text-decoration: none; }
+
+/* ---------- Folha ---------- */
+/* Sem padding inferior: qualquer sobra depois do rodapé cria uma
+   página em branco no fim do PDF. O respiro de baixo vem da @page. */
+.sheet {
+  max-width: 175mm;
+  margin: 0 auto;
+  padding: 7mm 0 0;
+  background: var(--cv-bg);
+}
+
+/* ---------- Cabeçalho ---------- */
+.cv-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10mm;
+  align-items: start;
+  padding-bottom: 5mm;
+  border-bottom: 2px solid var(--cv-ink);
+}
+.cv-name {
+  font-size: 27pt;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+.cv-role {
+  margin-top: 2.5mm;
+  font-family: var(--cv-mono);
+  font-size: 7.6pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cv-accent);
+  font-weight: 500;
+}
+.cv-tagline {
+  margin-top: 3.5mm;
+  font-size: 10pt;
+  color: var(--cv-ink-2);
+  max-width: 105mm;
+  line-height: 1.45;
+}
+.cv-tagline em {
+  font-family: var(--cv-serif);
+  font-style: italic;
+  color: var(--cv-accent);
+  font-size: 11.5pt;
+}
+
+.cv-contact { display: grid; gap: 1.6mm; text-align: right; font-size: 8.8pt; }
+.cv-contact li { display: flex; align-items: center; justify-content: flex-end; gap: 2mm; color: var(--cv-ink-2); }
+.cv-contact li b { font-weight: 500; color: var(--cv-ink); }
+.cv-contact svg { width: 11px; height: 11px; color: var(--cv-accent); flex-shrink: 0; order: 2; }
+
+/* ---------- Seções ---------- */
+.cv-section { margin-top: 4.6mm; break-inside: avoid; }
+.cv-section__title {
+  font-family: var(--cv-mono);
+  font-size: 7.4pt;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cv-ink-3);
+  padding-bottom: 1.4mm;
+  margin-bottom: 3.2mm;
+  border-bottom: 1px solid var(--cv-line);
+}
+
+.cv-perfil p { font-size: 9.6pt; color: var(--cv-ink-2); line-height: 1.55; }
+.cv-perfil p + p { margin-top: 2.5mm; }
+
+/* ---------- Números ---------- */
+.cv-metrics {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3mm;
+}
+.cv-metric {
+  padding: 3mm 3mm 3.5mm;
+  border: 1px solid var(--cv-line);
+  border-radius: 2mm;
+  background: var(--cv-accent-soft);
+  text-align: center;
+}
+.cv-metric b {
+  display: block;
+  font-size: 14pt;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  color: var(--cv-accent);
+  line-height: 1.05;
+}
+.cv-metric span {
+  display: block;
+  margin-top: 1.2mm;
+  font-size: 7.2pt;
+  line-height: 1.3;
+  color: var(--cv-ink-2);
+}
+.cv-metrics__note {
+  margin-top: 2.5mm;
+  font-size: 7.4pt;
+  color: var(--cv-ink-3);
+  font-style: italic;
+}
+
+/* ---------- Experiência ---------- */
+.cv-job { display: grid; grid-template-columns: 24mm 1fr; gap: 4mm; break-inside: avoid; }
+.cv-job + .cv-job { margin-top: 3.6mm; padding-top: 3.6mm; border-top: 1px solid var(--cv-line-2); }
+.cv-job__when {
+  font-family: var(--cv-mono);
+  font-size: 7.8pt;
+  color: var(--cv-ink-3);
+  padding-top: 0.6mm;
+  letter-spacing: 0.01em;
+}
+.cv-job__when b { display: block; color: var(--cv-accent); font-weight: 500; }
+.cv-job__title { font-size: 11pt; font-weight: 600; letter-spacing: -0.018em; }
+.cv-job__org { font-size: 9.4pt; color: var(--cv-ink-2); margin-top: 0.4mm; }
+.cv-job__org b { color: var(--cv-ink); font-weight: 550; }
+.cv-job__list { margin-top: 2.2mm; display: grid; gap: 1.1mm; }
+.cv-job__list li {
+  position: relative;
+  padding-left: 4mm;
+  font-size: 9pt;
+  color: var(--cv-ink-2);
+  line-height: 1.45;
+}
+.cv-job__list li::before {
+  content: '';
+  position: absolute;
+  left: 0.6mm;
+  top: 1.55mm;
+  width: 1.4mm;
+  height: 1.4mm;
+  border-radius: 50%;
+  background: var(--cv-accent);
+}
+.cv-job__win {
+  margin-top: 2.2mm;
+  padding: 2mm 3mm;
+  border-left: 2px solid var(--cv-accent);
+  background: var(--cv-accent-soft);
+  font-size: 8.8pt;
+  color: var(--cv-ink);
+}
+.cv-job__win b { color: var(--cv-accent); font-weight: 650; }
+
+/* ---------- Habilidades ---------- */
+.cv-skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4mm 8mm; }
+.cv-skill-group h3 {
+  font-size: 8.6pt;
+  font-weight: 650;
+  margin-bottom: 1.6mm;
+  color: var(--cv-ink);
+}
+.cv-skill-group p { font-size: 8.8pt; color: var(--cv-ink-2); line-height: 1.5; }
+
+.cv-tools { display: flex; flex-wrap: wrap; gap: 1.8mm; }
+.cv-tools span {
+  padding: 1.2mm 2.6mm;
+  border: 1px solid var(--cv-line);
+  border-radius: 1.4mm;
+  font-size: 8.2pt;
+  color: var(--cv-ink-2);
+  background: #fafbfc;
+}
+
+/* ---------- Rodapé ---------- */
+.cv-foot {
+  margin-top: 4.5mm;
+  padding-top: 2.5mm;
+  border-top: 1px solid var(--cv-line);
+  display: flex;
+  justify-content: space-between;
+  gap: 4mm;
+  font-size: 7.6pt;
+  color: var(--cv-ink-3);
+}
+.cv-foot a { color: var(--cv-accent); }
+
+/* ---------- Barra de ação ----------
+   Some na impressão e nem chega a ser criada quando a página é aberta
+   com ?pdf=1, que é como o PDF é gerado. */
+.cv-bar {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px 9px 16px;
+  border-radius: 999px;
+  background: rgba(12, 14, 18, 0.94);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 13px;
+}
+.cv-bar button, .cv-bar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 38px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  color: #14161a;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 200ms ease;
+}
+.cv-bar a { background: rgba(255, 255, 255, 0.14); color: #fff; font-weight: 500; }
+.cv-bar button:hover, .cv-bar a:hover { opacity: 0.85; }
+.cv-bar svg { width: 15px; height: 15px; }
+.cv-bar__hint { color: #a8adb8; }
+
+/* ============================================================
+   IMPRESSÃO
+   ============================================================ */
+/* A margem vive na @page, não no bloco: assim TODA página ganha respiro,
+   e não só a primeira. Com padding no .sheet, as páginas seguintes
+   nasciam com o texto colado na borda e o conteúdo estourava para uma
+   terceira folha. */
+@page { size: A4; margin: 10mm 14mm; }
+
+/* Reforço: se o motor de impressão aplicar @media print, tudo bate com
+   o estilo base. Se ignorar, o base já está correto. */
+@media print {
+  body { background: #fff; padding: 0; }
+  .sheet { width: auto; min-height: 0; margin: 0; padding: 0; box-shadow: none; }
+  .cv-bar { display: none !important; }
+  a { text-decoration: none; }
+}
+
+.cv-section { break-inside: auto; }
+.cv-job, .cv-metrics, .cv-skills, .cv-head { break-inside: avoid; }
+.cv-section__title { break-after: avoid; }
+
+@media (max-width: 780px) {
+  body { padding: 12px 8px 80px; }
+  .sheet { width: 100%; padding: 8mm 7mm; }
+  .cv-head { grid-template-columns: 1fr; gap: 4mm; }
+  .cv-contact { text-align: left; }
+  .cv-contact li { justify-content: flex-start; }
+  .cv-contact svg { order: 0; }
+  .cv-metrics { grid-template-columns: repeat(2, 1fr); }
+  .cv-job { grid-template-columns: 1fr; gap: 1.5mm; }
+  .cv-skills { grid-template-columns: 1fr; }
+}
