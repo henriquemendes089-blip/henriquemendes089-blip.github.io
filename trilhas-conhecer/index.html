@@ -2909,7 +2909,7 @@ async function boot(){
   BASE=JSON.parse(document.getElementById('seed').textContent);
   if(location.protocol!=='file:'){try{const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'});if(r.ok){const j=await r.json();if(j&&Array.isArray(j.videos))BASE=j}}catch(e){}}
   let d=null;try{d=JSON.parse(lsGet(LS_DRAFT)||'null')}catch(e){}
-  if(d&&d.data&&Array.isArray(d.data.videos)){DATA=d.data;dirty=true;staleDraft=(BASE.versao||0)>(d.base||0)}else DATA=clone(BASE);
+  if(d&&d.data&&Array.isArray(d.data.videos)&&(d.base||0)>=(BASE.versao||0)){DATA=d.data;dirty=true}else{lsDel(LS_DRAFT);DATA=clone(BASE)}
   const q=new URLSearchParams(location.search);if(q.get('editar')==='1'||lsGet(LS_EDIT)==='1')setEdit(true);
   renderTabs();renderAll();route();
 }
