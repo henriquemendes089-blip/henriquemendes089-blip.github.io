@@ -117,7 +117,7 @@ tr.tot td{font-weight:700;background:rgba(163,230,53,.06)}
 /* tags */
 .tags{display:flex;flex-wrap:wrap;gap:6px}
 .tag{font-family:var(--m);font-size:11px;letter-spacing:.04em;padding:3px 9px;border-radius:99px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
-.t-Notícia{color:var(--blue)}.t-Curiosidade{color:var(--purple)}.t-Urgência{color:var(--red)}.t-Escassez{color:var(--orange)}
+.t-Lançamento{color:#34D399}.t-Notícia{color:var(--blue)}.t-Curiosidade{color:var(--purple)}.t-Urgência{color:var(--red)}.t-Escassez{color:var(--orange)}
 .t-Curso{color:var(--lime)}.t-Pais{color:var(--fruit)}.t-Grátis{color:var(--neon)}
 .t-Tutorial,.t-Bastidores,.t-Prova{color:var(--slate)}
 .c-Anúncio{color:#0A130D;background:var(--neon);border-color:var(--neon)}
@@ -407,7 +407,7 @@ footer .brand img{width:24px;height:24px}
       <div class="hero">
         <div class="eyebrow">Escola Técnica Conhecer × Brota Web</div>
         <h1>Campanha <em id="h-prog">Trilhas de Futuro</em></h1>
-        <p class="lead">Planejamento completo de tráfego pago e conteúdo orgânico para levar o máximo de inscrições às 3 unidades da Conhecer: verba dia a dia, estrutura de campanhas, 15 roteiros de vídeo, 15 artes em feed e story, calendário orgânico e remarketing.</p>
+        <p class="lead">Planejamento completo de tráfego pago e conteúdo orgânico para levar o máximo de inscrições às 3 unidades da Conhecer: verba dia a dia, estrutura de campanhas, roteiros de vídeo, artes em feed e story, calendário orgânico e remarketing.</p>
         <div class="chips" id="h-chips"></div>
       </div>
       <div class="grid g4 block" id="kpis" style="margin-top:26px"></div>
@@ -479,7 +479,7 @@ footer .brand img{width:24px;height:24px}
       </div>
       <div class="block">
         <h3>Teste da primeira semana</h3>
-        <p class="muted" style="font-size:14px;max-width:760px">As artes entram no ar assim que o programa abrir. Os vídeos de anúncio entram até 17/10, quando toda a produção termina.</p>
+        <p class="muted" style="font-size:14px;max-width:760px">As artes e o V20 (só texto) entram no ar assim que o programa abrir. Na primeira semana, os vídeos de lançamento (V16 a V21) puxam a campanha; os demais vídeos de anúncio entram até 17/10, quando toda a produção termina.</p>
         <div class="tbl-wrap"><table id="testTable"></table></div>
       </div>
       <div class="card block">
@@ -495,7 +495,7 @@ footer .brand img{width:24px;height:24px}
     </section>
 
     <section class="sec" id="videos">
-      <div class="sec-h"><div><div class="eyebrow">Vídeos</div><h2>15 roteiros de vídeo</h2><p>12 anúncios de até 40 segundos (gancho, corpo e chamada, sem depoimento) e 3 vídeos orgânicos de até 1min30. Toque em um roteiro para abrir cena por cena, com fala, texto na tela, imagem de apoio e transição.</p></div>
+      <div class="sec-h"><div><div class="eyebrow">Vídeos</div><h2 id="vTitle">Roteiros de vídeo</h2><p id="vLead"></p></div>
         <button class="btn pri edit-only" type="button" onclick="newItem('videos')"><svg><use href="#i-plus"/></svg>Novo roteiro</button></div>
       <div class="filters" id="vFilters"></div>
       <div class="list" id="vList"></div>
@@ -572,7 +572,7 @@ footer .brand img{width:24px;height:24px}
 </div>
 
 <script type="application/json" id="seed">{
- "versao": 4,
+ "versao": 5,
  "atualizado": "2026-10-14",
  "vars": [
   {
@@ -1652,6 +1652,321 @@ footer .brand img{width:24px;height:24px}
    "legenda": "Bastidores da nossa equipe ajudando quem quer estudar de graça pelo {{PROGRAMA}}. Falta a sua inscrição! Chama no WhatsApp do link da bio. Até {{DATA_FIM}}.",
    "mensagem": "",
    "notas": "Usar só o número real de inscrições concluídas no CRM. Depoimento de aluno só com autorização por escrito (e do responsável, se for menor)."
+  },
+  {
+   "id": "V16",
+   "titulo": "Inscrições abertas: a gente te ajuda",
+   "tipo": "Lançamento",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Todos da unidade",
+   "duracao": "25s",
+   "fase": "Fase 1 (15 a 21/10)",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Abriram as inscrições do {{PROGRAMA}}!",
+     "tela": "INSCRIÇÕES ABERTAS",
+     "imagem": "Pessoa da equipe na porta da Conhecer, animada, apontando para a fachada.",
+     "transicao": "Abertura com zoom punch-in"
+    },
+    {
+     "t": "3–11s",
+     "fala": "Se você quer fazer um curso técnico de qualidade e totalmente de graça, essa é a sua chance.",
+     "tela": "CURSO TÉCNICO 100% GRATUITO",
+     "imagem": "Alunos em aula prática no laboratório.",
+     "transicao": "Corte seco no beat"
+    },
+    {
+     "t": "11–19s",
+     "fala": "Aqui na Escola Técnica Conhecer tem Enfermagem, Administração, Desenvolvimento de Sistemas e muito mais, e você ainda recebe ajuda de custo de {{AJUDA}}.",
+     "tela": "OS CURSOS DA UNIDADE + {{AJUDA}}",
+     "imagem": "Montagem rápida com um take de cada curso.",
+     "transicao": "Slide lateral entre os cursos"
+    },
+    {
+     "t": "19–25s",
+     "fala": "Clica em Saiba Mais que a gente te ajuda a fazer a sua inscrição.",
+     "tela": "SAIBA MAIS · A GENTE TE AJUDA",
+     "imagem": "Atendente respondendo no WhatsApp; logo da Conhecer.",
+     "transicao": "Whip pan + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Inscrições abertas: curso técnico grátis",
+    "descricao": "A gente te ajuda a se inscrever",
+    "texto": "As inscrições do {{PROGRAMA}} estão abertas! Você que quer fazer um curso técnico de qualidade e totalmente de graça: clique em Saiba Mais e a equipe da Escola Técnica Conhecer te ajuda a fazer a inscrição pelo WhatsApp. Inscrições até {{DATA_FIM}}."
+   },
+   "mensagem": "Oi! Vi que abriram as inscrições do Trilhas e quero ajuda (V16)",
+   "notas": "Roteiro-base do lançamento. Gravar uma versão por unidade, citando na cena 3 só os cursos daquela unidade (BH não tem Enfermagem)."
+  },
+  {
+   "id": "V17",
+   "titulo": "Inscrições abertas: Enfermagem grátis",
+   "tipo": "Lançamento",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "sl"
+   ],
+   "curso": "Enfermagem",
+   "duracao": "25s",
+   "fase": "Fase 1 (15 a 21/10)",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Atenção: abriram as inscrições pra Técnico em Enfermagem de graça!",
+     "tela": "ENFERMAGEM · INSCRIÇÕES ABERTAS",
+     "imagem": "Aluna de jaleco virando para a câmera.",
+     "transicao": "Abertura com light leak"
+    },
+    {
+     "t": "3–12s",
+     "fala": "É pelo {{PROGRAMA}}: curso técnico de qualidade, 100% gratuito, com ajuda de custo de {{AJUDA}}. São 1.200 vagas na Conhecer de Ribeirão das Neves.",
+     "tela": "1.200 VAGAS · 100% GRATUITO",
+     "imagem": "Laboratório de enfermagem: maca, manequim, estetoscópio.",
+     "transicao": "Corte seco"
+    },
+    {
+     "t": "12–20s",
+     "fala": "Você não precisa se virar sozinho no site do governo: a nossa equipe faz a inscrição junto com você.",
+     "tela": "A GENTE FAZ COM VOCÊ",
+     "imagem": "Atendente ajudando um aluno no celular.",
+     "transicao": "Slide vertical"
+    },
+    {
+     "t": "20–25s",
+     "fala": "Clica em Saiba Mais e faz a sua inscrição com a gente.",
+     "tela": "SAIBA MAIS",
+     "imagem": "Logo da Conhecer sobre a foto do laboratório.",
+     "transicao": "Zoom out + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Inscrições abertas: Enfermagem grátis",
+    "descricao": "1.200 vagas · Ribeirão das Neves",
+    "texto": "Abriram as inscrições do {{PROGRAMA}}! Faça o Técnico em Enfermagem de qualidade e totalmente de graça na Escola Técnica Conhecer, com ajuda de custo de {{AJUDA}}. Clique em Saiba Mais e a gente te ajuda a se inscrever."
+   },
+   "mensagem": "Oi! Quero me inscrever em Enfermagem no Trilhas (V17)",
+   "notas": "Versão Santa Luzia: 400 vagas, unidade São Benedito."
+  },
+  {
+   "id": "V18",
+   "titulo": "Inscrições abertas no Centro de BH",
+   "tipo": "Lançamento",
+   "canal": "Anúncio",
+   "unidades": [
+    "bh"
+   ],
+   "curso": "Todos da unidade",
+   "duracao": "25s",
+   "fase": "Fase 1 (15 a 21/10)",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Centro de BH: abriram as inscrições pra curso técnico de graça!",
+     "tela": "CENTRO DE BH · INSCRIÇÕES ABERTAS",
+     "imagem": "Movimento da rua no Centro e a fachada da Conhecer.",
+     "transicao": "Abertura com time-lapse da rua"
+    },
+    {
+     "t": "3–13s",
+     "fala": "Computação Gráfica, Desenvolvimento de Sistemas, Contabilidade, Comércio e Condomínio. Tudo 100% gratuito pelo {{PROGRAMA}}.",
+     "tela": "5 CURSOS · 100% GRATUITOS",
+     "imagem": "Um take de cada curso: tela de design, código, planilha, vitrine, portaria.",
+     "transicao": "Whip pan entre os cursos"
+    },
+    {
+     "t": "13–20s",
+     "fala": "São 1.759 vagas, e você ainda recebe ajuda de custo de {{AJUDA}}.",
+     "tela": "1.759 VAGAS + {{AJUDA}}",
+     "imagem": "Alunos chegando na unidade.",
+     "transicao": "Glitch"
+    },
+    {
+     "t": "20–25s",
+     "fala": "Clica em Saiba Mais que a gente te ajuda a se inscrever.",
+     "tela": "SAIBA MAIS",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Flash branco + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Curso técnico grátis no Centro de BH",
+    "descricao": "Inscrições abertas · 1.759 vagas",
+    "texto": "Abriram as inscrições do {{PROGRAMA}}! São 5 cursos técnicos de qualidade e totalmente de graça na Escola Técnica Conhecer do Centro de BH. Clique em Saiba Mais e a nossa equipe te ajuda a fazer a inscrição."
+   },
+   "mensagem": "Oi! Quero me inscrever no Trilhas no Centro de BH (V18)",
+   "notas": ""
+  },
+  {
+   "id": "V19",
+   "titulo": "Abriu! (equipe gravando no celular)",
+   "tipo": "Lançamento",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Vários",
+   "duracao": "20s",
+   "fase": "Fase 1 (15 a 21/10)",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Gente, abriu! As inscrições do {{PROGRAMA}} começaram.",
+     "tela": "ABRIU!",
+     "imagem": "Atendente da Conhecer gravando selfie no corredor da escola.",
+     "transicao": "Abertura sem corte, em selfie"
+    },
+    {
+     "t": "3–12s",
+     "fala": "É curso técnico de graça, de verdade, aqui na Conhecer. E a gente tá aqui o dia inteiro ajudando quem quer se inscrever.",
+     "tela": "CURSO TÉCNICO DE GRAÇA",
+     "imagem": "Ela anda pelo corredor mostrando a equipe atendendo.",
+     "transicao": "Jump cut"
+    },
+    {
+     "t": "12–20s",
+     "fala": "Toca em Inscreva-se, me chama no WhatsApp e a gente faz juntos.",
+     "tela": "INSCREVA-SE",
+     "imagem": "Ela aponta para baixo, na direção do botão.",
+     "transicao": "Zoom punch-out + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Abriu! Curso técnico de graça",
+    "descricao": "A gente faz a inscrição com você",
+    "texto": "Abriram as inscrições do {{PROGRAMA}}! Curso técnico de qualidade e totalmente de graça na Escola Técnica Conhecer. Toque em Inscreva-se e a nossa equipe faz a inscrição junto com você pelo WhatsApp."
+   },
+   "mensagem": "Oi! Vi o vídeo e quero me inscrever no Trilhas (V19)",
+   "notas": "Formato que não parece anúncio: gravar no celular, com luz natural e sem roteiro decorado. Gravar uma vez em cada unidade, se der."
+  },
+  {
+   "id": "V20",
+   "titulo": "Inscrições abertas só com texto (sem gravação)",
+   "tipo": "Lançamento",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Vários",
+   "duracao": "15s",
+   "fase": "Fase 1 (15 a 21/10)",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–2s",
+     "fala": "Inscrições abertas!",
+     "tela": "INSCRIÇÕES ABERTAS",
+     "imagem": "Letras gigantes batendo no ritmo da música, nas cores da Conhecer.",
+     "transicao": "Abertura com texto animado"
+    },
+    {
+     "t": "2–7s",
+     "fala": "Curso técnico 100% gratuito.",
+     "tela": "CURSO TÉCNICO / 100% GRATUITO",
+     "imagem": "Foto de aluno ao fundo, revelada por dentro das letras.",
+     "transicao": "Máscara de texto"
+    },
+    {
+     "t": "7–11s",
+     "fala": "Com ajuda de custo de {{AJUDA}}.",
+     "tela": "+ {{AJUDA}} DE AJUDA DE CUSTO",
+     "imagem": "Foto de alunos em aula.",
+     "transicao": "Empurra para cima"
+    },
+    {
+     "t": "11–15s",
+     "fala": "Clica em Saiba Mais que a gente te ajuda a se inscrever.",
+     "tela": "SAIBA MAIS",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Zoom out + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Inscrições abertas: curso técnico grátis",
+    "descricao": "Até {{DATA_FIM}}",
+    "texto": "Inscrições abertas no {{PROGRAMA}}! Curso técnico de qualidade e totalmente de graça na Escola Técnica Conhecer, com ajuda de custo de {{AJUDA}}. Clique em Saiba Mais que a gente te ajuda a se inscrever."
+   },
+   "mensagem": "Oi! Quero me inscrever no Trilhas (V20)",
+   "notas": "Feito só com texto, fotos e locução (opcional), sem gravar ninguém: pode subir já no dia 15, junto com as artes. Funciona bem em Stories e Reels."
+  },
+  {
+   "id": "V21",
+   "titulo": "Trilhas de Futuro em 20 segundos",
+   "tipo": "Lançamento",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Vários",
+   "duracao": "25s",
+   "fase": "Fase 1 (15 a 21/10)",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "{{PROGRAMA}} em 20 segundos. Valendo!",
+     "tela": "TRILHAS DE FUTURO EM 20s",
+     "imagem": "Pessoa da equipe aperta um cronômetro na mão.",
+     "transicao": "Abertura com cronômetro"
+    },
+    {
+     "t": "3–9s",
+     "fala": "O que é: curso técnico pago pelo Governo de Minas. Pra você, custa zero.",
+     "tela": "CUSTA R$ 0",
+     "imagem": "Close no rosto, falando rápido.",
+     "transicao": "Corte seco"
+    },
+    {
+     "t": "9–15s",
+     "fala": "Quem pode: quem está no ensino médio ou já terminou.",
+     "tela": "QUEM PODE",
+     "imagem": "Jovens com mochila na porta da escola.",
+     "transicao": "Slide lateral"
+    },
+    {
+     "t": "15–21s",
+     "fala": "Onde: na Escola Técnica Conhecer, em Ribeirão das Neves, BH e Santa Luzia, com ajuda de custo de {{AJUDA}}.",
+     "tela": "NEVES · BH · SANTA LUZIA",
+     "imagem": "Fachadas das 3 unidades.",
+     "transicao": "Whip pan"
+    },
+    {
+     "t": "21–25s",
+     "fala": "Como: clica em Saiba Mais que a gente faz a inscrição com você.",
+     "tela": "SAIBA MAIS",
+     "imagem": "Cronômetro para; logo da Conhecer.",
+     "transicao": "Flash + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Trilhas de Futuro em 20 segundos",
+    "descricao": "Curso técnico grátis · inscrições abertas",
+    "texto": "Curso técnico de qualidade, totalmente de graça e com ajuda de custo de {{AJUDA}}: é o {{PROGRAMA}}, e as inscrições estão abertas. Clique em Saiba Mais e a equipe da Escola Técnica Conhecer faz a inscrição com você."
+   },
+   "mensagem": "Oi! Quero entender o Trilhas e me inscrever (V21)",
+   "notas": "Confirmar no edital quem pode se inscrever nesta edição antes de gravar a cena 3."
   }
  ],
  "artes": [
@@ -2179,13 +2494,13 @@ footer .brand img{width:24px;height:24px}
   },
   {
    "quando": "15/10 (qui)",
-   "entrega": "Artes no ar assim que o programa abrir. Gravação de todos os vídeos de anúncio (V01 a V12, com as versões por unidade e as versões de dias do V11) e da tela do site para o V13. V13 e o carrossel publicados no orgânico.",
+   "entrega": "Artes e o V20 (só texto, sem gravação) no ar assim que o programa abrir. Gravação dos vídeos de lançamento (V16 a V21) e de todos os vídeos de anúncio (V01 a V12, com as versões por unidade e as versões de dias do V11), mais a tela do site para o V13. V13 e o carrossel publicados no orgânico.",
    "resp": "Conhecer grava · Brota edita",
    "status": "A fazer"
   },
   {
    "quando": "16/10 (sex)",
-   "entrega": "V01 a V10 editados e no ar. Artes restantes prontas: A03, A08, A09, A13, A14 (todas as versões de dias) e A15. Gravação dos tours das 3 unidades (V14) e dos bastidores (V15). Kit enviado às escolas.",
+   "entrega": "Vídeos de lançamento (V16 a V19 e V21) e V01 a V10 editados e no ar. Artes restantes prontas: A03, A08, A09, A13, A14 (todas as versões de dias) e A15. Gravação dos tours das 3 unidades (V14) e dos bastidores (V15). Kit enviado às escolas.",
    "resp": "Conhecer grava · Brota edita",
    "status": "A fazer"
   },
@@ -2201,13 +2516,13 @@ footer .brand img{width:24px;height:24px}
 const GH_DEFAULT = {"owner": "henriquemendes089-blip", "repo": "henriquemendes089-blip.github.io", "branch": "main", "path": "trilhas-conhecer/data.json"};
 const UN = {neves:'Ribeirão das Neves', bh:'BH · Centro', sl:'Santa Luzia'};
 const UN_S = {neves:'Neves', bh:'BH', sl:'Santa Luzia'};
-const TIPOS_V = ['Notícia','Curiosidade','Urgência','Escassez','Curso','Pais','Grátis','Tutorial','Bastidores','Prova social'];
+const TIPOS_V = ['Lançamento','Notícia','Curiosidade','Urgência','Escassez','Curso','Pais','Grátis','Tutorial','Bastidores','Prova social'];
 const CANAIS = ['Anúncio','Orgânico','Remarketing'];
 const CTAS = ['Saiba Mais','Inscreva-se','Chame no WhatsApp (link na bio)'];
 const STATUS = ['Rascunho','Em revisão','Aprovado','Em produção','No ar','Pausado'];
 const PROD_ST = ['A fazer','Em andamento','Feito'];
 const LS_DRAFT='tf_draft_v1', LS_EDIT='tf_edit', LS_GH='tf_gh_v1';
-const TABS=[['visao','Visão geral'],['verba','Verba'],['campanhas','Campanhas'],['videos','Roteiros','15'],['artes','Artes','15'],['organico','Orgânico'],['remarketing','Remarketing'],['producao','Produção']];
+const TABS=[['visao','Visão geral'],['verba','Verba'],['campanhas','Campanhas'],['videos','Roteiros','#v'],['artes','Artes','#a'],['organico','Orgânico'],['remarketing','Remarketing'],['producao','Produção']];
 
 let BASE, DATA, dirty=false, staleDraft=false;
 const vf={canal:'Todos',tipo:'Todos',un:'Todas'}, af={canal:'Todos',tipo:'Todos',un:'Todas'};
@@ -2282,7 +2597,7 @@ async function publish(){
 }
 
 /* ---------- tabs ---------- */
-function renderTabs(){$('#tabs').innerHTML=TABS.map(([id,l,n])=>`<button class="tab" type="button" data-t="${id}">${l}${n?`<span class="n">${n}</span>`:''}</button>`).join('');
+function renderTabs(){$('#tabs').innerHTML=TABS.map(([id,l,n])=>{if(n==='#v')n=DATA.videos.length;if(n==='#a')n=DATA.artes.length;return `<button class="tab" type="button" data-t="${id}">${l}${n?`<span class="n">${n}</span>`:''}</button>`}).join('');
   document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{location.hash=b.dataset.t})}
 function route(){const id=(location.hash||'#visao').slice(1).split('/')[0];const ok=TABS.some(t=>t[0]===id)?id:'visao';
   document.querySelectorAll('.sec').forEach(s=>s.classList.toggle('on',s.id===ok));
@@ -2394,7 +2709,7 @@ function renderCamp(){
        <tr><td class="mono" style="font-size:12.5px">TF_PROSP_${u.id.toUpperCase()}_PAIS</td><td>Pais: 35 a 55 anos · mesmo raio</td><td>${DATA.videos.concat(DATA.artes).filter(x=>x.canal==='Anúncio'&&(x.tipo==='Pais'||x.id==='A02'||x.id==='V02')&&x.unidades.includes(u.id)).map(x=>x.id).join(', ')}</td><td class="num">${brl(base*.2)}</td></tr>`});
   r+=`<tr><td><b>TF · Remarketing</b><br><span class="muted" style="font-size:12.5px">Só ${dmy(f4.inicio)} a ${dmy(f4.fim)}</span></td><td class="mono" style="font-size:12.5px">TF_RMK_TODOS</td><td>Viu 50% dos vídeos, engajou nos perfis ou chamou e não concluiu (lista do CRM). Exclui quem já concluiu.</td><td>${rmkItems().map(x=>x.id).join(', ')}</td><td class="num">${brl(f4.diaria*f4.remarketing/100)} (F4)</td></tr>`;
   $('#campTable').innerHTML=r;
-  const test=[['Ribeirão das Neves','A04, A10, A01, A02, A09 (A09 em 16/10)','V01, V03, V07, V10 (16/10)'],['BH · Centro','A06, A11, A01, A02, A08 (versão BH, 16/10)','V01, V04, V06 (16/10)'],['Santa Luzia','A05, A07, A12, A02','V03 versão SL, V05 (16/10)'],['Pais (3 unidades)','A13 (16/10)','V08 (16/10)']];
+  const test=[['Ribeirão das Neves','A04, A10, A01, A02, A09 (A09 em 16/10)','V20 (15/10) · V16, V17, V19, V21, V03 (16/10)'],['BH · Centro','A06, A11, A01, A02, A08 (versão BH, 16/10)','V20 (15/10) · V16, V18, V19, V21, V04 (16/10)'],['Santa Luzia','A05, A07, A12, A02','V20 (15/10) · V16, V17 versão SL, V19, V05 (16/10)'],['Pais (3 unidades)','A13 (16/10)','V08 (16/10)']];
   $('#testTable').innerHTML=`<tr><th>Conjunto</th><th>Artes (15/10)</th><th>Vídeos</th></tr>`+test.map(t=>`<tr><td><b>${t[0]}</b></td><td class="mono" style="font-size:13px">${t[1]}</td><td class="mono" style="font-size:13px">${t[2]}</td></tr>`).join('');
 }
 
@@ -2412,6 +2727,7 @@ function statusSel(kind,i,cur){return `<select class="inline edit-only" onclick=
 function stCls(s){return 'st st-'+String(s||'').split(' ')[0]}
 function renderVideos(){
   filterBar($('#vFilters'),vf,DATA.videos,renderVideos);
+  {const na=DATA.videos.filter(v=>v.canal!=='Orgânico').length,no=DATA.videos.length-na,nl=DATA.videos.filter(v=>v.tipo==='Lançamento').length;$('#vTitle').textContent=DATA.videos.length+' roteiros de vídeo';$('#vLead').textContent=na+' anúncios de até 40 segundos (gancho, corpo e chamada, sem depoimento), sendo '+nl+' de lançamento para o início da campanha, e '+no+' vídeos orgânicos de até 1min30. Toque em um roteiro para abrir cena por cena, com fala, texto na tela, imagem de apoio e transição.'}
   const list=DATA.videos.map((v,i)=>[v,i]).filter(([v])=>pass(v,vf));
   $('#vFilters-c').textContent=list.length+' de '+DATA.videos.length;
   $('#vList').innerHTML=list.map(([v,i])=>{const open=openCards.has('v'+v.id);
