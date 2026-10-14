@@ -1,5 +1,5 @@
 {
- "versao": 5,
+ "versao": 6,
  "atualizado": "2026-10-14",
  "vars": [
   {
@@ -53,7 +53,7 @@
   }
  ],
  "metas": {
-  "verba": 12000,
+  "verba": 10000,
   "inscricoes_teto": 5000,
   "matriculas_meta": 2500,
   "dias": 32
@@ -149,7 +149,7 @@
    "nome": "Lançamento e teste",
    "inicio": "2026-10-15",
    "fim": "2026-10-21",
-   "diaria": 400,
+   "diaria": 340,
    "remarketing": 0,
    "foco": "Aproveitar o pico de interesse da abertura e descobrir rápido quais criativos trazem conversa mais barata em cada unidade. As artes sobem no dia 15 e todos os vídeos de anúncio entram até 17/10."
   },
@@ -158,7 +158,7 @@
    "nome": "Escala",
    "inicio": "2026-10-22",
    "fim": "2026-11-03",
-   "diaria": 280,
+   "diaria": 230,
    "remarketing": 0,
    "foco": "Concentrar a verba nos vencedores da fase 1, pausar o que não converte e testar 1 ou 2 ângulos novos por semana. Verba diária menor porque o meio da campanha costuma ter menos urgência."
   },
@@ -167,7 +167,7 @@
    "nome": "Aceleração",
    "inicio": "2026-11-04",
    "fim": "2026-11-10",
-   "diaria": 340,
+   "diaria": 280,
    "remarketing": 0,
    "foco": "Entram os criativos de urgência (\"faltam X dias\") e de escassez. A verba sobe para pegar quem deixou para depois. Os públicos de remarketing já estão sendo formados desde o dia 15."
   },
@@ -176,12 +176,12 @@
    "nome": "Reta final + remarketing",
    "inicio": "2026-11-11",
    "fim": "2026-11-15",
-   "diaria": 560,
+   "diaria": 470,
    "remarketing": 60,
    "foco": "Últimos 5 dias: 60% da verba vai para remarketing (quem já viu os vídeos, interagiu ou chamou no WhatsApp e não concluiu) e 40% para prospecção com urgência. Os criativos já testados viram remarketing com a camada de contagem regressiva."
   }
  ],
- "reserva": 380,
+ "reserva": 320,
  "reserva_nota": "Reserva para impulsionar orgânicos que viralizarem ou reforçar a unidade que estiver com custo mais baixo. Se não for usada até 10/11, entra na reta final.",
  "videos": [
   {
