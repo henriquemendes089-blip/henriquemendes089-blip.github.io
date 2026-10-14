@@ -478,9 +478,19 @@ footer .brand img{width:24px;height:24px}
         </div>
       </div>
       <div class="block">
-        <h3>Teste do primeiro dia (15/10)</h3>
-        <p class="muted" style="font-size:14px;max-width:760px">As artes entram no ar assim que o programa abrir. Os vídeos sobem conforme ficam prontos (V01 a V03 em 16/10; V04 a V10 em 20/10).</p>
+        <h3>Teste da primeira semana</h3>
+        <p class="muted" style="font-size:14px;max-width:760px">As artes entram no ar assim que o programa abrir. Os vídeos de anúncio entram até 17/10, quando toda a produção termina.</p>
         <div class="tbl-wrap"><table id="testTable"></table></div>
+      </div>
+      <div class="card block">
+        <h3 style="margin-bottom:10px">Cuidados em todas as peças</h3>
+        <ul class="rules">
+          <li><b>A Conhecer fala como instituição credenciada.</b> Sem logo, cores ou identidade do Governo de Minas.</li>
+          <li><b>Nada de “vaga garantida” ou “aprovação garantida”.</b> A seleção é feita pelo Estado. Escassez fala só das vagas da Conhecer, que são números reais.</li>
+          <li><b>Peças com cara de notícia</b> levam o selo “Informativo Conhecer” e não usam logo de jornal, TV ou portal.</li>
+          <li><b>Sem depoimento em anúncio pago.</b> No orgânico, só depoimento real e com autorização por escrito (do responsável, se for menor).</li>
+          <li><b>Números e datas</b> só depois de conferidos no edital da edição.</li>
+        </ul>
       </div>
     </section>
 
@@ -526,26 +536,12 @@ footer .brand img{width:24px;height:24px}
     </section>
 
     <section class="sec" id="producao">
-      <div class="sec-h"><div><div class="eyebrow">Mão na massa</div><h2>Cronograma de produção</h2><p>O programa abre amanhã, então o dia 1 começa com artes e os vídeos entram em sequência. Nada vai ao ar antes do lançamento oficial.</p></div>
+      <div class="sec-h"><div><div class="eyebrow">Mão na massa</div><h2>Cronograma de produção</h2><p>Toda a produção termina em 17/10 (sábado). Depois disso não tem mais gravação nem arte nova, só operação: leitura dos resultados 2 vezes por dia, corte dos anúncios fracos em 20/10, urgência ligada em 04/11 e remarketing em 11/11.</p></div>
         <button class="btn pri edit-only" type="button" onclick="addRow('producao')"><svg><use href="#i-plus"/></svg>Adicionar</button></div>
       <div class="tbl-wrap"><table id="prodTable"></table></div>
     </section>
 
-    <section class="sec" id="pendencias">
-      <div class="sec-h"><div><div class="eyebrow">Para o Samuel</div><h2>Pendências e cuidados</h2><p>O que precisa ser confirmado para as peças irem ao ar sem erro, e as regras que todos os criativos seguem.</p></div>
-        <button class="btn pri edit-only" type="button" onclick="addRow('pendencias')"><svg><use href="#i-plus"/></svg>Adicionar</button></div>
-      <div class="tbl-wrap"><table id="pendTable"></table></div>
-      <div class="card block">
-        <h3 style="margin-bottom:10px">Cuidados em todas as peças</h3>
-        <ul class="rules">
-          <li><b>A Conhecer fala como instituição credenciada.</b> Sem logo, cores ou identidade do Governo de Minas.</li>
-          <li><b>Nada de “vaga garantida” ou “aprovação garantida”.</b> A seleção é feita pelo Estado. Escassez fala só das vagas da Conhecer, que são números reais.</li>
-          <li><b>Peças com cara de notícia</b> levam o selo “Informativo Conhecer” e não usam logo de jornal, TV ou portal.</li>
-          <li><b>Sem depoimento em anúncio pago.</b> No orgânico, só depoimento real e com autorização por escrito (do responsável, se for menor).</li>
-          <li><b>Números e datas</b> só depois de conferidos no edital da edição.</li>
-        </ul>
-      </div>
-    </section>
+
 
   </div>
 </main>
@@ -576,7 +572,7 @@ footer .brand img{width:24px;height:24px}
 </div>
 
 <script type="application/json" id="seed">{
- "versao": 2,
+ "versao": 4,
  "atualizado": "2026-10-14",
  "vars": [
   {
@@ -624,8 +620,8 @@ footer .brand img{width:24px;height:24px}
   {
    "key": "INICIO_AULAS",
    "label": "Início das aulas",
-   "value": "[data a confirmar]",
-   "ok": false,
+   "value": "Março ou Abril de 2027",
+   "ok": true,
    "nota": "Usado só no vídeo de tour (V14)."
   }
  ],
@@ -728,7 +724,7 @@ footer .brand img{width:24px;height:24px}
    "fim": "2026-10-21",
    "diaria": 400,
    "remarketing": 0,
-   "foco": "Aproveitar o pico de interesse da abertura e descobrir rápido quais criativos trazem conversa mais barata em cada unidade. As artes sobem no dia 15, os 3 primeiros vídeos no dia 16 e os demais até o dia 20."
+   "foco": "Aproveitar o pico de interesse da abertura e descobrir rápido quais criativos trazem conversa mais barata em cada unidade. As artes sobem no dia 15 e todos os vídeos de anúncio entram até 17/10."
   },
   {
    "id": "f2",
@@ -819,7 +815,7 @@ footer .brand img{width:24px;height:24px}
     "texto": "PLANTÃO: abriram as inscrições do {{PROGRAMA}}! Curso técnico 100% gratuito na Escola Técnica Conhecer, com ajuda de custo de {{AJUDA}}. São 2.436 vagas em Ribeirão das Neves. Toque em Saiba Mais e a nossa equipe te ajuda a fazer a inscrição pelo WhatsApp."
    },
    "mensagem": "Oi! Vi o plantão e quero ajuda pra me inscrever no Trilhas (Neves · V01)",
-   "notas": "Gravar 3 versões (Neves 2.436 vagas e 4 cursos; BH 1.759 e 5 cursos; Santa Luzia 711 e 5 cursos). A partir de 18/10 trocar \"abriram\" por \"estão abertas\". Não usar logo do Governo nem de emissora de TV."
+   "notas": "Gravar 3 versões (Neves 2.436 vagas e 4 cursos; BH 1.759 e 5 cursos; Santa Luzia 711 e 5 cursos). Gravar também a versão com \"estão abertas\" para usar a partir de 18/10. Não usar logo do Governo nem de emissora de TV."
   },
   {
    "id": "V02",
@@ -2177,131 +2173,27 @@ footer .brand img{width:24px;height:24px}
  "producao": [
   {
    "quando": "14/10 (qua)",
-   "entrega": "Samuel aprova o planejamento. Brota monta as campanhas e produz A01, A02, A04, A06, A07 e A10 a A12 (feed + story).",
+   "entrega": "Planejamento aprovado. Campanhas montadas no Gerenciador, pausadas. Artes do 1º dia prontas: A01, A02, A04, A05, A06, A07, A10, A11 e A12 (feed + story).",
    "resp": "Brota + Samuel",
    "status": "Em andamento"
   },
   {
    "quando": "15/10 (qui)",
-   "entrega": "Artes no ar assim que o programa abrir. Gravar V01, V02, V03 e a tela do site para V13. Publicar V13 e o carrossel no orgânico.",
+   "entrega": "Artes no ar assim que o programa abrir. Gravação de todos os vídeos de anúncio (V01 a V12, com as versões por unidade e as versões de dias do V11) e da tela do site para o V13. V13 e o carrossel publicados no orgânico.",
    "resp": "Conhecer grava · Brota edita",
    "status": "A fazer"
   },
   {
    "quando": "16/10 (sex)",
-   "entrega": "V01, V02 e V03 editados e no ar. Produzir A03, A05, A08, A09 e A13. Enviar o kit para as escolas.",
-   "resp": "Brota",
-   "status": "A fazer"
-  },
-  {
-   "quando": "17 e 18/10",
-   "entrega": "Gravar V04 a V10 e o tour de Ribeirão das Neves (V14). Live 1.",
-   "resp": "Conhecer grava",
-   "status": "A fazer"
-  },
-  {
-   "quando": "20/10 (ter)",
-   "entrega": "V04 a V10 no ar. Fim da fase de teste: primeira leitura de resultados e corte dos perdedores.",
-   "resp": "Brota",
-   "status": "A fazer"
-  },
-  {
-   "quando": "27/10 (ter)",
-   "entrega": "Gravar V15 (bastidores) e V11 (urgência) com as versões de dias.",
+   "entrega": "V01 a V10 editados e no ar. Artes restantes prontas: A03, A08, A09, A13, A14 (todas as versões de dias) e A15. Gravação dos tours das 3 unidades (V14) e dos bastidores (V15). Kit enviado às escolas.",
    "resp": "Conhecer grava · Brota edita",
    "status": "A fazer"
   },
   {
-   "quando": "03/11 (ter)",
-   "entrega": "V11 e A14 (versão 10 dias) prontos para a fase de aceleração.",
-   "resp": "Brota",
+   "quando": "17/10 (sáb)",
+   "entrega": "Edição de V11, V12, V14 e V15. Revisão final com o Samuel e todas as peças aprovadas. Urgência (V11, A14) e remarketing (V12, A14, A15) prontos e pausados, programados para ligar em 04/11 e 11/11. Produção encerrada.",
+   "resp": "Brota + Samuel",
    "status": "A fazer"
-  },
-  {
-   "quando": "10/11 (ter)",
-   "entrega": "Remarketing montado: públicos, lista do CRM para exclusão, V12, A14 e A15 aprovados.",
-   "resp": "Brota + equipe do CRM",
-   "status": "A fazer"
-  },
-  {
-   "quando": "11 a 15/11",
-   "entrega": "Reta final: revisão de verba duas vezes por dia e atualização diária da contagem regressiva.",
-   "resp": "Brota",
-   "status": "A fazer"
-  }
- ],
- "pendencias": [
-  {
-   "item": "Valor da ajuda de custo na 7ª edição",
-   "porque": "Aparece em quase todos os criativos",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Data e horário exatos de encerramento (15/11?)",
-   "porque": "Urgência, contagem regressiva e verba",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Quem pode se inscrever nesta edição (séries, EJA, quem já concluiu, quem já fez Trilhas)",
-   "porque": "Segmentação e textos (V08, A13)",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Vagas por curso confirmadas no catálogo oficial",
-   "porque": "Números de vagas em todas as peças",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Idade mínima para Radiologia",
-   "porque": "Público do V05 e da A07",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Ementas de Computação Gráfica e Desenvolvimento de Sistemas",
-   "porque": "V04, V06, A06, A08",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Logo, cores, fotos e vídeos reais das 3 unidades e dos laboratórios",
-   "porque": "Todas as artes e vídeos",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Quem grava os vídeos e autorizações de imagem (responsável, se menor)",
-   "porque": "V01 a V15",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Escala de atendimento em fins de semana e feriados (02/11 Finados; 15/11 é domingo e feriado)",
-   "porque": "O pico de mensagens vem na reta final",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Exportação diária do CRM: quem chamou e quem concluiu (telefones)",
-   "porque": "Remarketing e exclusão de quem já se inscreveu",
-   "resp": "Brota + equipe do CRM",
-   "ok": false
-  },
-  {
-   "item": "Forma de pagamento e limite da conta de anúncios para R$ 12 mil no mês",
-   "porque": "Evitar anúncio parado por pagamento",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Data de início das aulas",
-   "porque": "Vídeo de tour (V14)",
-   "resp": "Samuel",
-   "ok": false
   }
  ]
 }</script>
@@ -2315,7 +2207,7 @@ const CTAS = ['Saiba Mais','Inscreva-se','Chame no WhatsApp (link na bio)'];
 const STATUS = ['Rascunho','Em revisão','Aprovado','Em produção','No ar','Pausado'];
 const PROD_ST = ['A fazer','Em andamento','Feito'];
 const LS_DRAFT='tf_draft_v1', LS_EDIT='tf_edit', LS_GH='tf_gh_v1';
-const TABS=[['visao','Visão geral'],['verba','Verba'],['campanhas','Campanhas'],['videos','Roteiros','15'],['artes','Artes','15'],['organico','Orgânico'],['remarketing','Remarketing'],['producao','Produção'],['pendencias','Pendências']];
+const TABS=[['visao','Visão geral'],['verba','Verba'],['campanhas','Campanhas'],['videos','Roteiros','15'],['artes','Artes','15'],['organico','Orgânico'],['remarketing','Remarketing'],['producao','Produção']];
 
 let BASE, DATA, dirty=false, staleDraft=false;
 const vf={canal:'Todos',tipo:'Todos',un:'Todas'}, af={canal:'Todos',tipo:'Todos',un:'Todas'};
@@ -2502,7 +2394,7 @@ function renderCamp(){
        <tr><td class="mono" style="font-size:12.5px">TF_PROSP_${u.id.toUpperCase()}_PAIS</td><td>Pais: 35 a 55 anos · mesmo raio</td><td>${DATA.videos.concat(DATA.artes).filter(x=>x.canal==='Anúncio'&&(x.tipo==='Pais'||x.id==='A02'||x.id==='V02')&&x.unidades.includes(u.id)).map(x=>x.id).join(', ')}</td><td class="num">${brl(base*.2)}</td></tr>`});
   r+=`<tr><td><b>TF · Remarketing</b><br><span class="muted" style="font-size:12.5px">Só ${dmy(f4.inicio)} a ${dmy(f4.fim)}</span></td><td class="mono" style="font-size:12.5px">TF_RMK_TODOS</td><td>Viu 50% dos vídeos, engajou nos perfis ou chamou e não concluiu (lista do CRM). Exclui quem já concluiu.</td><td>${rmkItems().map(x=>x.id).join(', ')}</td><td class="num">${brl(f4.diaria*f4.remarketing/100)} (F4)</td></tr>`;
   $('#campTable').innerHTML=r;
-  const test=[['Ribeirão das Neves','A04, A10, A01, A02, A09','V03, V01 (16/10)'],['BH · Centro','A06, A11, A01, A02, A08 (versão BH)','V01, V02 (16/10)'],['Santa Luzia','A05, A07, A12, A02','V03 versão SL (16/10)'],['Pais (3 unidades)','A13','V08 (20/10)']];
+  const test=[['Ribeirão das Neves','A04, A10, A01, A02, A09 (A09 em 16/10)','V01, V03, V07, V10 (16/10)'],['BH · Centro','A06, A11, A01, A02, A08 (versão BH, 16/10)','V01, V04, V06 (16/10)'],['Santa Luzia','A05, A07, A12, A02','V03 versão SL, V05 (16/10)'],['Pais (3 unidades)','A13 (16/10)','V08 (16/10)']];
   $('#testTable').innerHTML=`<tr><th>Conjunto</th><th>Artes (15/10)</th><th>Vídeos</th></tr>`+test.map(t=>`<tr><td><b>${t[0]}</b></td><td class="mono" style="font-size:13px">${t[1]}</td><td class="mono" style="font-size:13px">${t[2]}</td></tr>`).join('');
 }
 
@@ -2600,7 +2492,7 @@ function renderProd(){$('#prodTable').innerHTML=`<tr><th>Quando</th><th>Entrega<
 function renderPend(){$('#pendTable').innerHTML=`<tr><th>Pendência</th><th>Para que serve</th><th>Responsável</th><th>Situação</th><th class="edit-only"></th></tr>`+DATA.pendencias.map((r,i)=>`<tr class="${r.ok?'pend-ok':''}"><td>${rich(r.item)}</td><td class="muted">${esc(r.porque)}</td><td class="muted">${esc(r.resp)}</td><td><span class="view-only ok-pill ${r.ok?'y':'n'}">${r.ok?'Resolvido':'A confirmar'}</span><label class="edit-only" style="cursor:pointer"><input type="checkbox" ${r.ok?'checked':''} onchange="DATA.pendencias[${i}].ok=this.checked;saveDraft();renderPend()"> Resolvido</label></td>${rowBtns('pendencias',i)}</tr>`).join('')}
 function addRow(k){const o={};ROWS[k].fields.forEach(f=>o[f[0]]=f[2]==='check'?false:(f[2]==='select'?f[3][0]:''));DATA[k].push(o);saveDraft();renderRowsAll();editRow(k,DATA[k].length-1)}
 function delRow(k,i){if(!confirm('Excluir esta linha?'))return;DATA[k].splice(i,1);saveDraft();renderRowsAll()}
-function renderRowsAll(){renderOrg();renderProd();renderPend()}
+function renderRowsAll(){renderOrg();renderProd()}
 function editRow(k,i){const r=DATA[k][i],cfg=ROWS[k];
   $('#mTitle').textContent='Editar · '+cfg.title;
   $('#mBody').innerHTML='<div class="fgrid">'+cfg.fields.map(([key,l,t,opt])=>{const v=r[key];

@@ -1,5 +1,5 @@
 {
- "versao": 2,
+ "versao": 4,
  "atualizado": "2026-10-14",
  "vars": [
   {
@@ -47,8 +47,8 @@
   {
    "key": "INICIO_AULAS",
    "label": "Início das aulas",
-   "value": "[data a confirmar]",
-   "ok": false,
+   "value": "Março ou Abril de 2027",
+   "ok": true,
    "nota": "Usado só no vídeo de tour (V14)."
   }
  ],
@@ -151,7 +151,7 @@
    "fim": "2026-10-21",
    "diaria": 400,
    "remarketing": 0,
-   "foco": "Aproveitar o pico de interesse da abertura e descobrir rápido quais criativos trazem conversa mais barata em cada unidade. As artes sobem no dia 15, os 3 primeiros vídeos no dia 16 e os demais até o dia 20."
+   "foco": "Aproveitar o pico de interesse da abertura e descobrir rápido quais criativos trazem conversa mais barata em cada unidade. As artes sobem no dia 15 e todos os vídeos de anúncio entram até 17/10."
   },
   {
    "id": "f2",
@@ -242,7 +242,7 @@
     "texto": "PLANTÃO: abriram as inscrições do {{PROGRAMA}}! Curso técnico 100% gratuito na Escola Técnica Conhecer, com ajuda de custo de {{AJUDA}}. São 2.436 vagas em Ribeirão das Neves. Toque em Saiba Mais e a nossa equipe te ajuda a fazer a inscrição pelo WhatsApp."
    },
    "mensagem": "Oi! Vi o plantão e quero ajuda pra me inscrever no Trilhas (Neves · V01)",
-   "notas": "Gravar 3 versões (Neves 2.436 vagas e 4 cursos; BH 1.759 e 5 cursos; Santa Luzia 711 e 5 cursos). A partir de 18/10 trocar \"abriram\" por \"estão abertas\". Não usar logo do Governo nem de emissora de TV."
+   "notas": "Gravar 3 versões (Neves 2.436 vagas e 4 cursos; BH 1.759 e 5 cursos; Santa Luzia 711 e 5 cursos). Gravar também a versão com \"estão abertas\" para usar a partir de 18/10. Não usar logo do Governo nem de emissora de TV."
   },
   {
    "id": "V02",
@@ -1600,131 +1600,27 @@
  "producao": [
   {
    "quando": "14/10 (qua)",
-   "entrega": "Samuel aprova o planejamento. Brota monta as campanhas e produz A01, A02, A04, A06, A07 e A10 a A12 (feed + story).",
+   "entrega": "Planejamento aprovado. Campanhas montadas no Gerenciador, pausadas. Artes do 1º dia prontas: A01, A02, A04, A05, A06, A07, A10, A11 e A12 (feed + story).",
    "resp": "Brota + Samuel",
    "status": "Em andamento"
   },
   {
    "quando": "15/10 (qui)",
-   "entrega": "Artes no ar assim que o programa abrir. Gravar V01, V02, V03 e a tela do site para V13. Publicar V13 e o carrossel no orgânico.",
+   "entrega": "Artes no ar assim que o programa abrir. Gravação de todos os vídeos de anúncio (V01 a V12, com as versões por unidade e as versões de dias do V11) e da tela do site para o V13. V13 e o carrossel publicados no orgânico.",
    "resp": "Conhecer grava · Brota edita",
    "status": "A fazer"
   },
   {
    "quando": "16/10 (sex)",
-   "entrega": "V01, V02 e V03 editados e no ar. Produzir A03, A05, A08, A09 e A13. Enviar o kit para as escolas.",
-   "resp": "Brota",
-   "status": "A fazer"
-  },
-  {
-   "quando": "17 e 18/10",
-   "entrega": "Gravar V04 a V10 e o tour de Ribeirão das Neves (V14). Live 1.",
-   "resp": "Conhecer grava",
-   "status": "A fazer"
-  },
-  {
-   "quando": "20/10 (ter)",
-   "entrega": "V04 a V10 no ar. Fim da fase de teste: primeira leitura de resultados e corte dos perdedores.",
-   "resp": "Brota",
-   "status": "A fazer"
-  },
-  {
-   "quando": "27/10 (ter)",
-   "entrega": "Gravar V15 (bastidores) e V11 (urgência) com as versões de dias.",
+   "entrega": "V01 a V10 editados e no ar. Artes restantes prontas: A03, A08, A09, A13, A14 (todas as versões de dias) e A15. Gravação dos tours das 3 unidades (V14) e dos bastidores (V15). Kit enviado às escolas.",
    "resp": "Conhecer grava · Brota edita",
    "status": "A fazer"
   },
   {
-   "quando": "03/11 (ter)",
-   "entrega": "V11 e A14 (versão 10 dias) prontos para a fase de aceleração.",
-   "resp": "Brota",
+   "quando": "17/10 (sáb)",
+   "entrega": "Edição de V11, V12, V14 e V15. Revisão final com o Samuel e todas as peças aprovadas. Urgência (V11, A14) e remarketing (V12, A14, A15) prontos e pausados, programados para ligar em 04/11 e 11/11. Produção encerrada.",
+   "resp": "Brota + Samuel",
    "status": "A fazer"
-  },
-  {
-   "quando": "10/11 (ter)",
-   "entrega": "Remarketing montado: públicos, lista do CRM para exclusão, V12, A14 e A15 aprovados.",
-   "resp": "Brota + equipe do CRM",
-   "status": "A fazer"
-  },
-  {
-   "quando": "11 a 15/11",
-   "entrega": "Reta final: revisão de verba duas vezes por dia e atualização diária da contagem regressiva.",
-   "resp": "Brota",
-   "status": "A fazer"
-  }
- ],
- "pendencias": [
-  {
-   "item": "Valor da ajuda de custo na 7ª edição",
-   "porque": "Aparece em quase todos os criativos",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Data e horário exatos de encerramento (15/11?)",
-   "porque": "Urgência, contagem regressiva e verba",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Quem pode se inscrever nesta edição (séries, EJA, quem já concluiu, quem já fez Trilhas)",
-   "porque": "Segmentação e textos (V08, A13)",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Vagas por curso confirmadas no catálogo oficial",
-   "porque": "Números de vagas em todas as peças",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Idade mínima para Radiologia",
-   "porque": "Público do V05 e da A07",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Ementas de Computação Gráfica e Desenvolvimento de Sistemas",
-   "porque": "V04, V06, A06, A08",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Logo, cores, fotos e vídeos reais das 3 unidades e dos laboratórios",
-   "porque": "Todas as artes e vídeos",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Quem grava os vídeos e autorizações de imagem (responsável, se menor)",
-   "porque": "V01 a V15",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Escala de atendimento em fins de semana e feriados (02/11 Finados; 15/11 é domingo e feriado)",
-   "porque": "O pico de mensagens vem na reta final",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Exportação diária do CRM: quem chamou e quem concluiu (telefones)",
-   "porque": "Remarketing e exclusão de quem já se inscreveu",
-   "resp": "Brota + equipe do CRM",
-   "ok": false
-  },
-  {
-   "item": "Forma de pagamento e limite da conta de anúncios para R$ 12 mil no mês",
-   "porque": "Evitar anúncio parado por pagamento",
-   "resp": "Samuel",
-   "ok": false
-  },
-  {
-   "item": "Data de início das aulas",
-   "porque": "Vídeo de tour (V14)",
-   "resp": "Samuel",
-   "ok": false
   }
  ]
 }
