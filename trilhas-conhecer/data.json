@@ -1,0 +1,1730 @@
+{
+ "versao": 1,
+ "atualizado": "2026-10-14",
+ "vars": [
+  {
+   "key": "PROGRAMA",
+   "label": "Nome do programa",
+   "value": "Trilhas de Futuro",
+   "ok": true,
+   "nota": "Nome oficial no site do Governo de Minas."
+  },
+  {
+   "key": "DATA_INICIO",
+   "label": "Abertura das inscrições",
+   "value": "15/10",
+   "ok": true,
+   "nota": "Informado pelo Samuel."
+  },
+  {
+   "key": "DATA_FIM",
+   "label": "Encerramento das inscrições",
+   "value": "15/11",
+   "ok": false,
+   "nota": "Considerado 15/11 (domingo e feriado). Confirmar data e horário de encerramento no edital."
+  },
+  {
+   "key": "AJUDA",
+   "label": "Ajuda de custo",
+   "value": "R$ ?? por dia",
+   "ok": false,
+   "nota": "Nas edições anteriores foi de R$ 20 por dia útil de aula. Confirmar o valor da 7ª edição antes de publicar qualquer peça."
+  },
+  {
+   "key": "SITE",
+   "label": "Site de inscrição",
+   "value": "trilhasdefuturo.mg.gov.br",
+   "ok": true,
+   "nota": ""
+  },
+  {
+   "key": "WHATS",
+   "label": "WhatsApp do Trilhas",
+   "value": "(31) 99061-2413",
+   "ok": true,
+   "nota": "Número dedicado com API oficial."
+  },
+  {
+   "key": "INICIO_AULAS",
+   "label": "Início das aulas",
+   "value": "[data a confirmar]",
+   "ok": false,
+   "nota": "Usado só no vídeo de tour (V14)."
+  }
+ ],
+ "metas": {
+  "verba": 12000,
+  "inscricoes_teto": 5000,
+  "matriculas_meta": 2500,
+  "dias": 32
+ },
+ "unidades": [
+  {
+   "id": "neves",
+   "nome": "Ribeirão das Neves",
+   "bairro": "Veneza",
+   "prioridade": 1,
+   "split": 50,
+   "cursos": [
+    [
+     "Técnico em Enfermagem",
+     1200
+    ],
+    [
+     "Técnico em Administração",
+     450
+    ],
+    [
+     "Técnico em Desenvolvimento de Sistemas",
+     411
+    ],
+    [
+     "Técnico em Segurança do Trabalho",
+     375
+    ]
+   ]
+  },
+  {
+   "id": "bh",
+   "nome": "Belo Horizonte",
+   "bairro": "Centro",
+   "prioridade": 2,
+   "split": 36,
+   "cursos": [
+    [
+     "Técnico em Computação Gráfica",
+     572
+    ],
+    [
+     "Técnico em Desenvolvimento de Sistemas",
+     420
+    ],
+    [
+     "Técnico em Contabilidade",
+     270
+    ],
+    [
+     "Técnico em Comércio",
+     250
+    ],
+    [
+     "Técnico em Condomínio",
+     247
+    ]
+   ]
+  },
+  {
+   "id": "sl",
+   "nome": "Santa Luzia",
+   "bairro": "São Benedito",
+   "prioridade": 3,
+   "split": 14,
+   "cursos": [
+    [
+     "Técnico em Enfermagem",
+     400
+    ],
+    [
+     "Técnico em Radiologia",
+     132
+    ],
+    [
+     "Técnico em Segurança do Trabalho",
+     77
+    ],
+    [
+     "Técnico em Administração",
+     68
+    ],
+    [
+     "Técnico em Vendas",
+     34
+    ]
+   ]
+  }
+ ],
+ "fases": [
+  {
+   "id": "f1",
+   "nome": "Lançamento e teste",
+   "inicio": "2026-10-15",
+   "fim": "2026-10-21",
+   "diaria": 400,
+   "remarketing": 0,
+   "foco": "Aproveitar o pico de interesse da abertura e descobrir rápido quais criativos trazem conversa mais barata em cada unidade. As artes sobem no dia 15, os 3 primeiros vídeos no dia 16 e os demais até o dia 20."
+  },
+  {
+   "id": "f2",
+   "nome": "Escala",
+   "inicio": "2026-10-22",
+   "fim": "2026-11-03",
+   "diaria": 280,
+   "remarketing": 0,
+   "foco": "Concentrar a verba nos vencedores da fase 1, pausar o que não converte e testar 1 ou 2 ângulos novos por semana. Verba diária menor porque o meio da campanha costuma ter menos urgência."
+  },
+  {
+   "id": "f3",
+   "nome": "Aceleração",
+   "inicio": "2026-11-04",
+   "fim": "2026-11-10",
+   "diaria": 340,
+   "remarketing": 0,
+   "foco": "Entram os criativos de urgência (\"faltam X dias\") e de escassez. A verba sobe para pegar quem deixou para depois. Os públicos de remarketing já estão sendo formados desde o dia 15."
+  },
+  {
+   "id": "f4",
+   "nome": "Reta final + remarketing",
+   "inicio": "2026-11-11",
+   "fim": "2026-11-15",
+   "diaria": 560,
+   "remarketing": 60,
+   "foco": "Últimos 5 dias: 60% da verba vai para remarketing (quem já viu os vídeos, interagiu ou chamou no WhatsApp e não concluiu) e 40% para prospecção com urgência. Os criativos já testados viram remarketing com a camada de contagem regressiva."
+  }
+ ],
+ "reserva": 380,
+ "reserva_nota": "Reserva para impulsionar orgânicos que viralizarem ou reforçar a unidade que estiver com custo mais baixo. Se não for usada até 10/11, entra na reta final.",
+ "videos": [
+  {
+   "id": "V01",
+   "titulo": "Plantão: inscrições abertas",
+   "tipo": "Notícia",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Todos da unidade",
+   "duracao": "35s",
+   "fase": "Fases 1 a 3",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Atenção, Ribeirão das Neves: abriram as inscrições pra curso técnico de graça.",
+     "tela": "PLANTÃO · INSCRIÇÕES ABERTAS",
+     "imagem": "Apresentador(a) em plano médio, estilo telejornal, com faixa \"Informativo Conhecer\".",
+     "transicao": "Abertura com vinheta de plantão (glitch)"
+    },
+    {
+     "t": "3–12s",
+     "fala": "É o {{PROGRAMA}}, do Governo de Minas. Curso técnico 100% gratuito: você não paga mensalidade e ainda recebe ajuda de custo de {{AJUDA}}.",
+     "tela": "100% GRATUITO + AJUDA DE CUSTO",
+     "imagem": "Alunos em sala e no laboratório da Conhecer.",
+     "transicao": "Corte seco com punch-in"
+    },
+    {
+     "t": "12–24s",
+     "fala": "Aqui na Escola Técnica Conhecer do Veneza são 2.436 vagas: Enfermagem, Administração, Segurança do Trabalho e Desenvolvimento de Sistemas.",
+     "tela": "2.436 VAGAS · lista dos 4 cursos",
+     "imagem": "Fachada da unidade e um take rápido de cada laboratório.",
+     "transicao": "Slide lateral entre os cursos"
+    },
+    {
+     "t": "24–32s",
+     "fala": "A inscrição é no site do governo, e a nossa equipe te ajuda a fazer pelo WhatsApp, passo a passo.",
+     "tela": "A GENTE TE AJUDA NO WHATSAPP",
+     "imagem": "Celular com a conversa do WhatsApp na tela.",
+     "transicao": "Whip pan"
+    },
+    {
+     "t": "32–35s",
+     "fala": "Toque em Saiba Mais e fala com a gente. As inscrições vão até {{DATA_FIM}}.",
+     "tela": "SAIBA MAIS · até {{DATA_FIM}}",
+     "imagem": "Logo da Conhecer sobre a fachada.",
+     "transicao": "Flash branco + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Inscrições abertas: curso técnico grátis",
+    "descricao": "Até {{DATA_FIM}} · ajuda no WhatsApp",
+    "texto": "PLANTÃO: abriram as inscrições do {{PROGRAMA}}! Curso técnico 100% gratuito na Escola Técnica Conhecer, com ajuda de custo de {{AJUDA}}. São 2.436 vagas em Ribeirão das Neves. Toque em Saiba Mais e a nossa equipe te ajuda a fazer a inscrição pelo WhatsApp."
+   },
+   "mensagem": "Oi! Vi o plantão e quero ajuda pra me inscrever no Trilhas (Neves · V01)",
+   "notas": "Gravar 3 versões (Neves 2.436 vagas e 4 cursos; BH 1.759 e 5 cursos; Santa Luzia 711 e 5 cursos). A partir de 18/10 trocar \"abriram\" por \"estão abertas\". Não usar logo do Governo nem de emissora de TV."
+  },
+  {
+   "id": "V02",
+   "titulo": "Curso técnico que não cobra nada",
+   "tipo": "Curiosidade",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Vários",
+   "duracao": "33s",
+   "fase": "Fases 1 a 3",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Tem curso técnico em Minas que não cobra um real… e ainda te ajuda com a passagem e o lanche.",
+     "tela": "CURSO TÉCNICO QUE NÃO COBRA NADA?",
+     "imagem": "Jovem olhando o celular, reação de surpresa.",
+     "transicao": "Abertura com zoom punch-in"
+    },
+    {
+     "t": "3–10s",
+     "fala": "Não é pegadinha. Chama {{PROGRAMA}}, é um programa do Governo de Minas, e as inscrições estão abertas.",
+     "tela": "NÃO É PEGADINHA",
+     "imagem": "Tela do site oficial desfocada ao fundo.",
+     "transicao": "Corte seco"
+    },
+    {
+     "t": "10–22s",
+     "fala": "Você estuda de graça, recebe ajuda de custo de {{AJUDA}} e sai com diploma de técnico. Na Conhecer tem Enfermagem, Radiologia, Computação Gráfica, Desenvolvimento de Sistemas e muito mais.",
+     "tela": "GRÁTIS + {{AJUDA}} + DIPLOMA",
+     "imagem": "Montagem rápida dos laboratórios no ritmo da música.",
+     "transicao": "Whip pan entre os cursos"
+    },
+    {
+     "t": "22–30s",
+     "fala": "O problema é que muita gente perde o prazo ou se confunde no site. Por isso a gente faz junto com você.",
+     "tela": "A GENTE FAZ JUNTO COM VOCÊ",
+     "imagem": "Atendente sorrindo, respondendo no WhatsApp.",
+     "transicao": "Slide vertical"
+    },
+    {
+     "t": "30–33s",
+     "fala": "Toque em Inscreva-se e garante a sua inscrição até {{DATA_FIM}}.",
+     "tela": "INSCREVA-SE",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Flash + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Curso técnico grátis + ajuda de custo",
+    "descricao": "Inscrições até {{DATA_FIM}}",
+    "texto": "Não é pegadinha: pelo {{PROGRAMA}} você faz curso técnico de graça na Escola Técnica Conhecer e ainda recebe ajuda de custo de {{AJUDA}}. São mais de 4.900 vagas em Ribeirão das Neves, BH e Santa Luzia. Toque em Inscreva-se e a gente te ajuda pelo WhatsApp."
+   },
+   "mensagem": "Oi! Quero me inscrever no Trilhas, curso técnico de graça (V02)",
+   "notas": "Vídeo-coringa: roda nas 3 unidades sem precisar de versão. Bom candidato a remarketing na reta final."
+  },
+  {
+   "id": "V03",
+   "titulo": "Técnico em Enfermagem por R$ 0",
+   "tipo": "Curso",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "sl"
+   ],
+   "curso": "Enfermagem",
+   "duracao": "35s",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Quanto custa um curso técnico de Enfermagem? Na Conhecer, agora: zero.",
+     "tela": "TÉCNICO EM ENFERMAGEM: R$ 0",
+     "imagem": "Aluna de jaleco se vira para a câmera.",
+     "transicao": "Abertura com zoom out"
+    },
+    {
+     "t": "3–12s",
+     "fala": "Pelo {{PROGRAMA}} o curso é 100% gratuito. Sem mensalidade. E você ainda recebe ajuda de custo de {{AJUDA}}.",
+     "tela": "SEM MENSALIDADE",
+     "imagem": "Laboratório de enfermagem: manequim, estetoscópio, maca.",
+     "transicao": "Corte seco no beat"
+    },
+    {
+     "t": "12–22s",
+     "fala": "São 1.200 vagas no Veneza, em Ribeirão das Neves. Você estuda pra trabalhar em hospital, clínica e UPA.",
+     "tela": "1.200 VAGAS · RIBEIRÃO DAS NEVES",
+     "imagem": "Aula prática (aferição de pressão, curativo).",
+     "transicao": "Match cut (luva → mão no celular)"
+    },
+    {
+     "t": "22–32s",
+     "fala": "A inscrição é no site do governo e você precisa escolher a Conhecer como escola. Ficou com dúvida? A gente faz com você no WhatsApp.",
+     "tela": "ESCOLHA: ESCOLA TÉCNICA CONHECER",
+     "imagem": "Tela do celular com o passo a passo.",
+     "transicao": "Slide lateral"
+    },
+    {
+     "t": "32–35s",
+     "fala": "Toque em Inscreva-se. As inscrições vão até {{DATA_FIM}}.",
+     "tela": "INSCREVA-SE",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Flash + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Técnico em Enfermagem 100% grátis",
+    "descricao": "1.200 vagas · Ribeirão das Neves",
+    "texto": "Quer trabalhar na área da saúde sem pagar mensalidade? O Técnico em Enfermagem da Escola Técnica Conhecer é 100% gratuito pelo {{PROGRAMA}}, e você ainda recebe ajuda de custo de {{AJUDA}}. São 1.200 vagas em Ribeirão das Neves. Toque em Inscreva-se e a gente te ajuda pelo WhatsApp."
+   },
+   "mensagem": "Oi! Quero me inscrever em Enfermagem pelo Trilhas (Neves · V03)",
+   "notas": "Carro-chefe da campanha. Versão Santa Luzia: 400 vagas, unidade São Benedito. Confirmar se a unidade tem laboratório para mostrar em vídeo."
+  },
+  {
+   "id": "V04",
+   "titulo": "Você edita tudo no celular?",
+   "tipo": "Curiosidade",
+   "canal": "Anúncio",
+   "unidades": [
+    "bh"
+   ],
+   "curso": "Computação Gráfica",
+   "duracao": "34s",
+   "fase": "Fases 1 a 4",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Se você passa horas editando foto e vídeo no celular, presta atenção.",
+     "tela": "VOCÊ EDITA TUDO NO CELULAR?",
+     "imagem": "Jovem editando vídeo no celular, close na tela.",
+     "transicao": "Abertura com zoom punch-in"
+    },
+    {
+     "t": "3–12s",
+     "fala": "Isso pode virar profissão. E o curso é de graça: Técnico em Computação Gráfica no Centro de BH, pelo {{PROGRAMA}}.",
+     "tela": "COMPUTAÇÃO GRÁFICA · GRÁTIS",
+     "imagem": "Tela de computador com design e edição em andamento.",
+     "transicao": "Glitch"
+    },
+    {
+     "t": "12–22s",
+     "fala": "São 572 vagas. Você aprende a criar imagens, artes e animações no computador, e ainda recebe ajuda de custo de {{AJUDA}}.",
+     "tela": "572 VAGAS · CENTRO DE BH",
+     "imagem": "Alunos no laboratório de informática.",
+     "transicao": "Whip pan"
+    },
+    {
+     "t": "22–31s",
+     "fala": "A inscrição é pelo site do governo, mas você não precisa fazer sozinho: a equipe da Conhecer te ajuda no WhatsApp.",
+     "tela": "A GENTE TE AJUDA",
+     "imagem": "Atendente no WhatsApp.",
+     "transicao": "Slide lateral"
+    },
+    {
+     "t": "31–34s",
+     "fala": "Toque em Saiba Mais e garante a ajuda na sua inscrição.",
+     "tela": "SAIBA MAIS",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Flash + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Computação Gráfica grátis no Centro de BH",
+    "descricao": "572 vagas · Trilhas de Futuro",
+    "texto": "Gosta de criar, editar e desenhar? Transforme isso em profissão com o Técnico em Computação Gráfica 100% gratuito da Escola Técnica Conhecer, no Centro de BH, pelo {{PROGRAMA}}. Toque em Saiba Mais e fale com a nossa equipe no WhatsApp."
+   },
+   "mensagem": "Oi! Quero me inscrever em Computação Gráfica pelo Trilhas (BH · V04)",
+   "notas": "Confirmar a ementa do curso antes de gravar a cena 3."
+  },
+  {
+   "id": "V05",
+   "titulo": "Só 132 vagas de Radiologia",
+   "tipo": "Escassez",
+   "canal": "Anúncio",
+   "unidades": [
+    "sl"
+   ],
+   "curso": "Radiologia",
+   "duracao": "32s",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Só 132 pessoas vão estudar Radiologia de graça na Conhecer de Santa Luzia.",
+     "tela": "SÓ 132 VAGAS",
+     "imagem": "Contador numérico parando em 132.",
+     "transicao": "Abertura com contador animado"
+    },
+    {
+     "t": "3–12s",
+     "fala": "É o Técnico em Radiologia, 100% gratuito pelo {{PROGRAMA}}. Sem mensalidade e com ajuda de custo de {{AJUDA}}.",
+     "tela": "100% GRATUITO",
+     "imagem": "Sala de exame de imagem.",
+     "transicao": "Corte seco"
+    },
+    {
+     "t": "12–22s",
+     "fala": "É o profissional que faz exames de imagem, como raio-x e tomografia, em hospitais e clínicas.",
+     "tela": "RAIO-X · TOMOGRAFIA",
+     "imagem": "Profissional com avental de proteção; imagem de raio-x no negatoscópio.",
+     "transicao": "Light leak"
+    },
+    {
+     "t": "22–29s",
+     "fala": "Com tão poucas vagas, não deixa pra depois. Chama a gente que a gente te ajuda a se inscrever.",
+     "tela": "NÃO DEIXA PRA DEPOIS",
+     "imagem": "Atendente no WhatsApp.",
+     "transicao": "Slide lateral"
+    },
+    {
+     "t": "29–32s",
+     "fala": "Toque em Inscreva-se. Vagas limitadas.",
+     "tela": "INSCREVA-SE · VAGAS LIMITADAS",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Zoom out + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Radiologia grátis: só 132 vagas",
+    "descricao": "Santa Luzia · São Benedito",
+    "texto": "São só 132 vagas para o Técnico em Radiologia 100% gratuito na Escola Técnica Conhecer de Santa Luzia, pelo {{PROGRAMA}}. Trabalhe com exames de imagem em hospitais e clínicas. Toque em Inscreva-se e a gente te ajuda pelo WhatsApp."
+   },
+   "mensagem": "Oi! Quero me inscrever em Radiologia pelo Trilhas (Santa Luzia · V05)",
+   "notas": "Confirmar com o Samuel se Radiologia tem idade mínima para matrícula (atividade com radiação costuma exigir 18 anos). Se tiver, o conjunto deste anúncio usa público 18+."
+  },
+  {
+   "id": "V06",
+   "titulo": "Tecnologia sem faculdade cara",
+   "tipo": "Curiosidade",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh"
+   ],
+   "curso": "Desenvolvimento de Sistemas",
+   "duracao": "35s",
+   "fase": "Fases 1 a 4",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Pra trabalhar com tecnologia você não precisa começar por uma faculdade cara.",
+     "tela": "SEM FACULDADE CARA",
+     "imagem": "Mãos digitando código, tela com luz no rosto.",
+     "transicao": "Abertura com glitch"
+    },
+    {
+     "t": "3–12s",
+     "fala": "Dá pra começar com um curso técnico de graça: Desenvolvimento de Sistemas, na Escola Técnica Conhecer, pelo {{PROGRAMA}}.",
+     "tela": "DESENVOLVIMENTO DE SISTEMAS · GRÁTIS",
+     "imagem": "Laboratório de informática.",
+     "transicao": "Zoom in na tela do computador"
+    },
+    {
+     "t": "12–22s",
+     "fala": "Você aprende a programar e a criar sistemas, sites e aplicativos. São 411 vagas em Ribeirão das Neves e 420 no Centro de BH.",
+     "tela": "411 NEVES · 420 BH",
+     "imagem": "App rodando no celular; site sendo montado.",
+     "transicao": "Split screen"
+    },
+    {
+     "t": "22–31s",
+     "fala": "Sem mensalidade e com ajuda de custo de {{AJUDA}}. A inscrição tem prazo, e a gente faz junto com você no WhatsApp.",
+     "tela": "TEM PRAZO: {{DATA_FIM}}",
+     "imagem": "Atendente no WhatsApp.",
+     "transicao": "Whip pan"
+    },
+    {
+     "t": "31–35s",
+     "fala": "Toque em Saiba Mais.",
+     "tela": "SAIBA MAIS",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Flash + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Aprenda a programar de graça",
+    "descricao": "Técnico em Desenvolvimento de Sistemas",
+    "texto": "Quer entrar na área de tecnologia? O Técnico em Desenvolvimento de Sistemas da Escola Técnica Conhecer é 100% gratuito pelo {{PROGRAMA}}: 411 vagas em Ribeirão das Neves e 420 no Centro de BH. Toque em Saiba Mais e a gente te ajuda na inscrição pelo WhatsApp."
+   },
+   "mensagem": "Oi! Quero me inscrever em Desenvolvimento de Sistemas pelo Trilhas (V06)",
+   "notas": "Um conjunto por unidade: no de BH, cortar a fala para citar só as 420 vagas do Centro. Confirmar a ementa."
+  },
+  {
+   "id": "V07",
+   "titulo": "2 profissões que toda empresa precisa",
+   "tipo": "Curso",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "sl"
+   ],
+   "curso": "Administração e Segurança do Trabalho",
+   "duracao": "35s",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Duas profissões que toda empresa precisa, e o curso das duas é de graça.",
+     "tela": "2 PROFISSÕES QUE TODA EMPRESA PRECISA",
+     "imagem": "Tela dividida: escritório e canteiro de obra.",
+     "transicao": "Abertura em split screen"
+    },
+    {
+     "t": "3–14s",
+     "fala": "A primeira: Técnico em Administração. Quem organiza pessoas, finanças e processos. São 450 vagas na Conhecer de Ribeirão das Neves.",
+     "tela": "ADMINISTRAÇÃO · 450 VAGAS",
+     "imagem": "Escritório, planilha, reunião.",
+     "transicao": "Slide lateral"
+    },
+    {
+     "t": "14–24s",
+     "fala": "A segunda: Técnico em Segurança do Trabalho. Quem protege os trabalhadores em fábricas, obras e empresas. São 375 vagas.",
+     "tela": "SEGURANÇA DO TRABALHO · 375 VAGAS",
+     "imagem": "Capacete, colete, EPI, fábrica.",
+     "transicao": "Whip pan"
+    },
+    {
+     "t": "24–32s",
+     "fala": "As duas são 100% gratuitas pelo {{PROGRAMA}}, com ajuda de custo de {{AJUDA}}. Escolhe a sua e fala com a gente.",
+     "tela": "100% GRATUITO",
+     "imagem": "Alunos em sala.",
+     "transicao": "Zoom out"
+    },
+    {
+     "t": "32–35s",
+     "fala": "Toque em Inscreva-se.",
+     "tela": "INSCREVA-SE",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Flash + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Administração ou Segurança do Trabalho grátis",
+    "descricao": "825 vagas · Ribeirão das Neves",
+    "texto": "Toda empresa precisa de quem organize e de quem proteja. Faça o Técnico em Administração ou o Técnico em Segurança do Trabalho 100% gratuito na Escola Técnica Conhecer, pelo {{PROGRAMA}}. São 825 vagas em Ribeirão das Neves. Toque em Inscreva-se."
+   },
+   "mensagem": "Oi! Quero me inscrever em Administração ou Segurança do Trabalho (V07)",
+   "notas": "Versão Santa Luzia: Administração 68 vagas e Segurança do Trabalho 77 vagas (145 no total)."
+  },
+  {
+   "id": "V08",
+   "titulo": "Pai, mãe: seu filho com profissão",
+   "tipo": "Pais",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Vários",
+   "duracao": "35s",
+   "fase": "Fases 1 a 3",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Pai, mãe: seu filho pode terminar o ensino médio já com uma profissão.",
+     "tela": "SEU FILHO COM PROFISSÃO",
+     "imagem": "Mãe e filho na cozinha olhando o celular juntos.",
+     "transicao": "Abertura com fade suave"
+    },
+    {
+     "t": "3–13s",
+     "fala": "Pelo {{PROGRAMA}}, do Governo de Minas, ele faz curso técnico 100% gratuito. Você não paga mensalidade, e ele ainda recebe ajuda de custo de {{AJUDA}}.",
+     "tela": "VOCÊ NÃO PAGA NADA",
+     "imagem": "Aluno chegando na escola de mochila.",
+     "transicao": "Corte seco"
+    },
+    {
+     "t": "13–23s",
+     "fala": "Na Escola Técnica Conhecer tem Enfermagem, Administração, Desenvolvimento de Sistemas e mais, em Ribeirão das Neves, BH e Santa Luzia.",
+     "tela": "3 UNIDADES · VÁRIOS CURSOS",
+     "imagem": "Fachadas das 3 unidades.",
+     "transicao": "Slide entre as unidades"
+    },
+    {
+     "t": "23–31s",
+     "fala": "A inscrição é online e tem prazo. A nossa equipe explica tudo e faz com vocês pelo WhatsApp.",
+     "tela": "A GENTE EXPLICA TUDO",
+     "imagem": "Atendente no WhatsApp.",
+     "transicao": "Whip pan"
+    },
+    {
+     "t": "31–35s",
+     "fala": "Toque em Saiba Mais e fala com a gente.",
+     "tela": "SAIBA MAIS",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Flash + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Seu filho com profissão, sem mensalidade",
+    "descricao": "Curso técnico gratuito · Trilhas",
+    "texto": "Pai, mãe: pelo {{PROGRAMA}} seu filho faz curso técnico 100% gratuito na Escola Técnica Conhecer, e ainda recebe ajuda de custo de {{AJUDA}}. A inscrição tem prazo: até {{DATA_FIM}}. Toque em Saiba Mais e a gente explica tudo pelo WhatsApp."
+   },
+   "mensagem": "Oi! Quero inscrever meu filho no Trilhas (pais · V08)",
+   "notas": "Roda só no conjunto de pais (35 a 55 anos). Confirmar no edital se o aluno do ensino médio faz o técnico em paralelo e quais séries podem se inscrever."
+  },
+  {
+   "id": "V09",
+   "titulo": "Qual é a pegadinha?",
+   "tipo": "Curiosidade",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Vários",
+   "duracao": "33s",
+   "fase": "Fases 2 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Curso técnico de graça? Qual é a pegadinha?",
+     "tela": "QUAL É A PEGADINHA?",
+     "imagem": "Pessoa desconfiada falando direto pra câmera.",
+     "transicao": "Abertura com zoom punch-in"
+    },
+    {
+     "t": "3–12s",
+     "fala": "Não tem. O {{PROGRAMA}} é um programa do Governo de Minas que paga o curso técnico pra você estudar em escolas credenciadas, como a Conhecer.",
+     "tela": "NÃO TEM PEGADINHA",
+     "imagem": "Fachada da Conhecer.",
+     "transicao": "Corte seco"
+    },
+    {
+     "t": "12–22s",
+     "fala": "Você não paga mensalidade e ainda recebe ajuda de custo de {{AJUDA}} pra transporte e alimentação.",
+     "tela": "SEM MENSALIDADE + {{AJUDA}}",
+     "imagem": "Aluno no ônibus; lanche no intervalo.",
+     "transicao": "Slide vertical"
+    },
+    {
+     "t": "22–30s",
+     "fala": "A única pegadinha é o prazo: as inscrições vão até {{DATA_FIM}}. E a gente te ajuda a fazer pelo WhatsApp.",
+     "tela": "PRAZO: {{DATA_FIM}}",
+     "imagem": "Calendário com a data circulada.",
+     "transicao": "Whip pan"
+    },
+    {
+     "t": "30–33s",
+     "fala": "Toque em Inscreva-se.",
+     "tela": "INSCREVA-SE",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Flash + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Curso técnico grátis. Sem pegadinha.",
+    "descricao": "Inscrições até {{DATA_FIM}}",
+    "texto": "Curso técnico de graça, com ajuda de custo de {{AJUDA}}? Sim, pelo {{PROGRAMA}}, do Governo de Minas, na Escola Técnica Conhecer. A única pegadinha é o prazo. Toque em Inscreva-se e a gente te ajuda pelo WhatsApp."
+   },
+   "mensagem": "Oi! Quero me inscrever no Trilhas (V09)",
+   "notas": "Quebra a principal objeção de quem vê \"grátis\" e desconfia."
+  },
+  {
+   "id": "V10",
+   "titulo": "As vagas têm número certo",
+   "tipo": "Escassez",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Todos da unidade",
+   "duracao": "35s",
+   "fase": "Fases 2 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "As vagas de curso técnico grátis em Ribeirão das Neves têm número certo.",
+     "tela": "VAGAS LIMITADAS",
+     "imagem": "Contador de vagas na tela.",
+     "transicao": "Abertura com contador"
+    },
+    {
+     "t": "3–13s",
+     "fala": "Enfermagem: 1.200 vagas. Administração: 450.",
+     "tela": "ENFERMAGEM 1.200 · ADMINISTRAÇÃO 450",
+     "imagem": "Laboratório de enfermagem; sala de administração.",
+     "transicao": "Slide lateral"
+    },
+    {
+     "t": "13–22s",
+     "fala": "Desenvolvimento de Sistemas: 411. Segurança do Trabalho: 375.",
+     "tela": "SISTEMAS 411 · SEGURANÇA 375",
+     "imagem": "Laboratório de informática; EPI.",
+     "transicao": "Whip pan"
+    },
+    {
+     "t": "22–31s",
+     "fala": "Todas 100% gratuitas pelo {{PROGRAMA}}, com ajuda de custo de {{AJUDA}}. Quando acabarem, acabou.",
+     "tela": "100% GRATUITO",
+     "imagem": "Alunos saindo da escola.",
+     "transicao": "Zoom in"
+    },
+    {
+     "t": "31–35s",
+     "fala": "Escolhe a sua e toque em Inscreva-se antes do prazo acabar.",
+     "tela": "INSCREVA-SE · até {{DATA_FIM}}",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Flash + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Vagas limitadas: curso técnico grátis",
+    "descricao": "Ribeirão das Neves · até {{DATA_FIM}}",
+    "texto": "As vagas são limitadas por curso: Enfermagem (1.200), Administração (450), Desenvolvimento de Sistemas (411) e Segurança do Trabalho (375), todas 100% gratuitas pelo {{PROGRAMA}} na Escola Técnica Conhecer de Ribeirão das Neves. Toque em Inscreva-se."
+   },
+   "mensagem": "Oi! Quero garantir minha inscrição no Trilhas (V10)",
+   "notas": "Gravar 3 versões, uma por unidade, com os cursos e vagas de cada uma. \"Quando acabarem, acabou\" vale para as vagas da Conhecer, não para o programa todo."
+  },
+  {
+   "id": "V11",
+   "titulo": "Faltam X dias",
+   "tipo": "Urgência",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Vários",
+   "duracao": "30s",
+   "fase": "Fases 3 e 4 (a partir de 04/11)",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Faltam 10 dias pra acabar a inscrição do curso técnico de graça.",
+     "tela": "FALTAM 10 DIAS",
+     "imagem": "Contagem regressiva gigante na tela.",
+     "transicao": "Abertura com contagem regressiva"
+    },
+    {
+     "t": "3–11s",
+     "fala": "Depois de {{DATA_FIM}}, só na próxima edição. E ninguém sabe quando ela vai abrir.",
+     "tela": "DEPOIS DE {{DATA_FIM}}, SÓ NA PRÓXIMA",
+     "imagem": "Calendário virando as folhas.",
+     "transicao": "Corte seco"
+    },
+    {
+     "t": "11–21s",
+     "fala": "Na Conhecer ainda dá tempo: Enfermagem, Computação Gráfica, Radiologia, Desenvolvimento de Sistemas e mais, 100% gratuitos, com ajuda de custo de {{AJUDA}}.",
+     "tela": "AINDA DÁ TEMPO",
+     "imagem": "Montagem rápida dos laboratórios.",
+     "transicao": "Whip pan"
+    },
+    {
+     "t": "21–27s",
+     "fala": "A gente faz a inscrição junto com você pelo WhatsApp, agora.",
+     "tela": "FAZ AGORA COM A GENTE",
+     "imagem": "Atendente no WhatsApp.",
+     "transicao": "Slide vertical"
+    },
+    {
+     "t": "27–30s",
+     "fala": "Toque em Inscreva-se. Faltam 10 dias.",
+     "tela": "INSCREVA-SE",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Flash + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Faltam 10 dias: curso técnico grátis",
+    "descricao": "Inscrições até {{DATA_FIM}}",
+    "texto": "Faltam 10 dias para acabar a inscrição do {{PROGRAMA}}. Curso técnico 100% gratuito na Escola Técnica Conhecer, com ajuda de custo de {{AJUDA}}. Toque em Inscreva-se e faça agora com a nossa ajuda no WhatsApp."
+   },
+   "mensagem": "Oi! Quero me inscrever antes do prazo acabar (V11)",
+   "notas": "Gravar uma vez e trocar só o número na edição: versões 10, 5, 3 e 1 dia, e \"É HOJE\" para 15/11. Ajustar se a data final mudar."
+  },
+  {
+   "id": "V12",
+   "titulo": "Ainda não se inscreveu?",
+   "tipo": "Urgência",
+   "canal": "Remarketing",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Vários",
+   "duracao": "30s",
+   "fase": "Fase 4 · 11 a 15/11",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–3s",
+     "fala": "Se você ainda não fez sua inscrição no {{PROGRAMA}}, esse vídeo é pra você.",
+     "tela": "AINDA NÃO SE INSCREVEU?",
+     "imagem": "Atendente da Conhecer falando direto pra câmera.",
+     "transicao": "Abertura com corte seco"
+    },
+    {
+     "t": "3–12s",
+     "fala": "As inscrições acabam em {{DATA_FIM}}. Depois disso, não dá pra entrar nesta edição.",
+     "tela": "ACABA EM {{DATA_FIM}}",
+     "imagem": "Relógio e calendário.",
+     "transicao": "Zoom in"
+    },
+    {
+     "t": "12–22s",
+     "fala": "Se o que te travou foi dúvida, documento ou o site do governo, a gente resolve com você no WhatsApp.",
+     "tela": "TRAVOU? A GENTE RESOLVE",
+     "imagem": "Tela do WhatsApp com o atendimento.",
+     "transicao": "Slide lateral"
+    },
+    {
+     "t": "22–27s",
+     "fala": "O curso continua 100% gratuito, com ajuda de custo de {{AJUDA}}.",
+     "tela": "100% GRATUITO",
+     "imagem": "Alunos em aula.",
+     "transicao": "Whip pan"
+    },
+    {
+     "t": "27–30s",
+     "fala": "Toque em Inscreva-se agora.",
+     "tela": "INSCREVA-SE AGORA",
+     "imagem": "Logo da Conhecer.",
+     "transicao": "Flash + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "Ainda dá tempo de se inscrever",
+    "descricao": "Acaba em {{DATA_FIM}}",
+    "texto": "Ficou para depois? As inscrições do {{PROGRAMA}} acabam em {{DATA_FIM}}. Se travou em alguma etapa, a equipe da Escola Técnica Conhecer resolve com você pelo WhatsApp. Curso técnico 100% gratuito. Toque em Inscreva-se agora."
+   },
+   "mensagem": "Oi! Ainda quero me inscrever no Trilhas (remarketing · V12)",
+   "notas": "Só para públicos de remarketing nos últimos 5 dias. Excluir quem já concluiu a inscrição (lista do CRM)."
+  },
+  {
+   "id": "V13",
+   "titulo": "Passo a passo da inscrição",
+   "tipo": "Tutorial",
+   "canal": "Orgânico",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Todos",
+   "duracao": "75s",
+   "fase": "Publicar em 15/10 · fixar no perfil",
+   "cta": "Chame no WhatsApp (link na bio)",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–5s",
+     "fala": "Vou te mostrar em um minuto como se inscrever no {{PROGRAMA}} e escolher a Conhecer.",
+     "tela": "INSCRIÇÃO EM 1 MINUTO",
+     "imagem": "Pessoa da equipe segurando o celular.",
+     "transicao": "Abertura com zoom in"
+    },
+    {
+     "t": "5–20s",
+     "fala": "Passo 1: entra no site {{SITE}} e clica pra fazer a inscrição.",
+     "tela": "PASSO 1 · ENTRE NO SITE",
+     "imagem": "Gravação de tela do site oficial.",
+     "transicao": "Corte seco para a gravação de tela"
+    },
+    {
+     "t": "20–35s",
+     "fala": "Passo 2: preenche seus dados. Tenha em mãos os documentos que o site pede.",
+     "tela": "PASSO 2 · SEUS DADOS",
+     "imagem": "Gravação de tela (dados borrados).",
+     "transicao": "Slide lateral"
+    },
+    {
+     "t": "35–50s",
+     "fala": "Passo 3: escolhe o curso, a cidade e a Escola Técnica Conhecer como instituição.",
+     "tela": "PASSO 3 · ESCOLHA A CONHECER",
+     "imagem": "Gravação de tela com destaque no nome da Conhecer.",
+     "transicao": "Zoom no campo da escola"
+    },
+    {
+     "t": "50–62s",
+     "fala": "Passo 4: confere tudo, confirma e tira um print do comprovante.",
+     "tela": "PASSO 4 · CONFIRME E SALVE",
+     "imagem": "Tela de confirmação.",
+     "transicao": "Flash branco"
+    },
+    {
+     "t": "62–75s",
+     "fala": "Travou em algum passo? Chama a gente no WhatsApp do link da bio que a gente faz com você.",
+     "tela": "TRAVOU? CHAMA NO WHATSAPP",
+     "imagem": "Pessoa da equipe sorrindo, logo.",
+     "transicao": "Whip pan + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "",
+    "descricao": "",
+    "texto": ""
+   },
+   "legenda": "Como se inscrever no {{PROGRAMA}} em 4 passos (e escolher a Escola Técnica Conhecer) 👇\n\n1. Entre em {{SITE}}\n2. Preencha seus dados\n3. Escolha o curso, a cidade e a Conhecer\n4. Confirme e salve o comprovante\n\nTravou? Chama no WhatsApp do link da bio que a nossa equipe faz junto com você. Inscrições até {{DATA_FIM}}.",
+   "mensagem": "",
+   "notas": "Gravar a tela do site no dia 15/10, com o sistema já aberto (o layout pode mudar). Também é o vídeo da página de orientação que o atendente envia. Se performar bem, vai para a reserva de impulsionamento."
+  },
+  {
+   "id": "V14",
+   "titulo": "Tour pela unidade",
+   "tipo": "Bastidores",
+   "canal": "Orgânico",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Todos da unidade",
+   "duracao": "60s",
+   "fase": "Semanas 2 a 4 (uma unidade por semana)",
+   "cta": "Chame no WhatsApp (link na bio)",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–5s",
+     "fala": "Esse é o lugar onde você pode estudar de graça pelo {{PROGRAMA}}.",
+     "tela": "VEM CONHECER A CONHECER",
+     "imagem": "Câmera entrando pela porta da unidade (POV).",
+     "transicao": "Abertura em plano-sequência"
+    },
+    {
+     "t": "5–20s",
+     "fala": "Aqui é a recepção, onde a gente te atende. E aqui ficam as salas de aula.",
+     "tela": "RECEPÇÃO · SALAS",
+     "imagem": "Recepção e corredor.",
+     "transicao": "Corte seco"
+    },
+    {
+     "t": "20–40s",
+     "fala": "Esse é o laboratório de [curso]. É aqui que você aprende na prática.",
+     "tela": "LABORATÓRIO DE [CURSO]",
+     "imagem": "Laboratórios da unidade, um por curso.",
+     "transicao": "Match cut entre os laboratórios"
+    },
+    {
+     "t": "40–50s",
+     "fala": "As aulas começam em {{INICIO_AULAS}}, e o curso é 100% gratuito.",
+     "tela": "100% GRATUITO",
+     "imagem": "Sala de aula vazia, luz entrando.",
+     "transicao": "Slide lateral"
+    },
+    {
+     "t": "50–60s",
+     "fala": "Quer estudar aqui? Chama a gente no WhatsApp do link da bio e faz sua inscrição com a nossa ajuda.",
+     "tela": "LINK NA BIO",
+     "imagem": "Equipe acenando na fachada.",
+     "transicao": "Zoom out + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "",
+    "descricao": "",
+    "texto": ""
+   },
+   "legenda": "Vem conhecer a Escola Técnica Conhecer de [unidade] por dentro! Aqui você pode fazer curso técnico 100% gratuito pelo {{PROGRAMA}}. Inscrições até {{DATA_FIM}}: chama a gente no WhatsApp do link da bio.",
+   "mensagem": "",
+   "notas": "Uma versão por unidade. Mostrar só laboratórios reais."
+  },
+  {
+   "id": "V15",
+   "titulo": "Bastidores: a equipe ajudando nas inscrições",
+   "tipo": "Prova social",
+   "canal": "Orgânico",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Todos",
+   "duracao": "45s",
+   "fase": "Semana 3 em diante",
+   "cta": "Chame no WhatsApp (link na bio)",
+   "status": "Rascunho",
+   "cenas": [
+    {
+     "t": "0–4s",
+     "fala": "É assim que a gente ajuda as pessoas a se inscreverem no {{PROGRAMA}}.",
+     "tela": "BASTIDORES",
+     "imagem": "Mesa da equipe com vários celulares e computadores.",
+     "transicao": "Abertura com time-lapse"
+    },
+    {
+     "t": "4–18s",
+     "fala": "Do outro lado do WhatsApp tem gente de verdade, tirando dúvida e fazendo a inscrição junto com você.",
+     "tela": "GENTE DE VERDADE",
+     "imagem": "Atendentes digitando, close na tela (dados borrados).",
+     "transicao": "Corte seco"
+    },
+    {
+     "t": "18–32s",
+     "fala": "Até agora a gente já ajudou [número real] pessoas a se inscreverem.",
+     "tela": "[NÚMERO REAL] INSCRIÇÕES",
+     "imagem": "Quadro com o número atualizado do CRM.",
+     "transicao": "Contador animado"
+    },
+    {
+     "t": "32–45s",
+     "fala": "Falta a sua. Chama no WhatsApp do link da bio, as inscrições vão até {{DATA_FIM}}.",
+     "tela": "FALTA A SUA",
+     "imagem": "Equipe olhando para a câmera.",
+     "transicao": "Whip pan + logo"
+    }
+   ],
+   "anuncio": {
+    "titulo": "",
+    "descricao": "",
+    "texto": ""
+   },
+   "legenda": "Bastidores da nossa equipe ajudando quem quer estudar de graça pelo {{PROGRAMA}}. Falta a sua inscrição! Chama no WhatsApp do link da bio. Até {{DATA_FIM}}.",
+   "mensagem": "",
+   "notas": "Usar só o número real de inscrições concluídas no CRM. Depoimento de aluno só com autorização por escrito (e do responsável, se for menor)."
+  }
+ ],
+ "artes": [
+  {
+   "id": "A01",
+   "titulo": "Plantão: inscrições abertas",
+   "tipo": "Notícia",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Todos",
+   "fase": "Fases 1 a 3",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "selo": "INFORMATIVO CONHECER",
+   "destaque": "INSCRIÇÕES ABERTAS",
+   "headline": "Ribeirão das Neves tem 2.436 vagas em cursos técnicos gratuitos",
+   "sub": "Programa {{PROGRAMA}} · inscrições até {{DATA_FIM}}",
+   "visual": "Layout de capa de portal de notícias: faixa vermelha \"PLANTÃO\", manchete grande, foto da fachada da unidade. Sem logo de jornal ou do Governo.",
+   "story": "Manchete no terço superior abaixo da zona segura; foto no centro; botão \"Saiba mais\" acima da faixa inferior.",
+   "anuncio": {
+    "titulo": "Inscrições abertas: curso técnico grátis",
+    "descricao": "Até {{DATA_FIM}}",
+    "texto": "INFORMATIVO: a Escola Técnica Conhecer de Ribeirão das Neves tem 2.436 vagas em cursos técnicos 100% gratuitos pelo {{PROGRAMA}}. Toque em Saiba Mais e veja como se inscrever com a nossa ajuda."
+   },
+   "mensagem": "Oi! Vi a notícia e quero me inscrever no Trilhas (A01)",
+   "notas": "3 versões (Neves 2.436 · BH 1.759 · Santa Luzia 711)."
+  },
+  {
+   "id": "A02",
+   "titulo": "100% gratuito",
+   "tipo": "Grátis",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Todos",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "selo": "TRILHAS DE FUTURO",
+   "destaque": "R$ 0",
+   "headline": "Curso técnico 100% gratuito",
+   "sub": "Sem mensalidade + ajuda de custo de {{AJUDA}}",
+   "visual": "\"R$ 0\" gigante como elemento principal, aluno sorrindo de uniforme ao lado. Fundo nas cores da Conhecer.",
+   "story": "\"R$ 0\" ocupa o centro da tela; headline acima; lista curta dos cursos abaixo.",
+   "anuncio": {
+    "titulo": "Curso técnico 100% gratuito",
+    "descricao": "Sem mensalidade · até {{DATA_FIM}}",
+    "texto": "Curso técnico por R$ 0: pelo {{PROGRAMA}} você estuda de graça na Escola Técnica Conhecer e ainda recebe ajuda de custo de {{AJUDA}}. Toque em Inscreva-se e a gente te ajuda pelo WhatsApp."
+   },
+   "mensagem": "Oi! Quero me inscrever no curso técnico gratuito (A02)",
+   "notas": "Peça-coringa para as 3 unidades."
+  },
+  {
+   "id": "A03",
+   "titulo": "Você sabia?",
+   "tipo": "Curiosidade",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Todos",
+   "fase": "Fases 1 a 3",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "selo": "VOCÊ SABIA?",
+   "destaque": "?",
+   "headline": "Dá pra fazer curso técnico de graça e ainda receber ajuda de custo",
+   "sub": "É o {{PROGRAMA}}, do Governo de Minas",
+   "visual": "Pergunta grande em balão de fala, jovem com expressão de surpresa.",
+   "story": "Pergunta em destaque no centro; resposta em letra menor abaixo; seta para o botão.",
+   "anuncio": {
+    "titulo": "Você sabia disso?",
+    "descricao": "Curso técnico grátis + ajuda de custo",
+    "texto": "Você sabia que dá pra fazer curso técnico de graça e ainda receber ajuda de custo de {{AJUDA}}? É o {{PROGRAMA}}, e a Escola Técnica Conhecer tem mais de 4.900 vagas. Toque em Saiba Mais."
+   },
+   "mensagem": "Oi! Quero saber mais sobre o Trilhas (A03)",
+   "notas": ""
+  },
+  {
+   "id": "A04",
+   "titulo": "Enfermagem · Neves",
+   "tipo": "Curso",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves"
+   ],
+   "curso": "Enfermagem",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "selo": "100% GRATUITO",
+   "destaque": "1.200 VAGAS",
+   "headline": "Técnico em Enfermagem grátis",
+   "sub": "Ribeirão das Neves · Veneza · ajuda de custo de {{AJUDA}}",
+   "visual": "Aluna de jaleco com estetoscópio, olhando para a câmera. Número 1.200 em destaque.",
+   "story": "Foto ocupa a tela inteira; \"1.200 VAGAS\" no centro; botão no rodapé.",
+   "anuncio": {
+    "titulo": "Técnico em Enfermagem 100% grátis",
+    "descricao": "1.200 vagas · Ribeirão das Neves",
+    "texto": "O Técnico em Enfermagem da Escola Técnica Conhecer é 100% gratuito pelo {{PROGRAMA}}: são 1.200 vagas em Ribeirão das Neves, com ajuda de custo de {{AJUDA}}. Toque em Inscreva-se."
+   },
+   "mensagem": "Oi! Quero me inscrever em Enfermagem (Neves · A04)",
+   "notas": "Peça com maior verba da campanha."
+  },
+  {
+   "id": "A05",
+   "titulo": "Enfermagem · Santa Luzia",
+   "tipo": "Curso",
+   "canal": "Anúncio",
+   "unidades": [
+    "sl"
+   ],
+   "curso": "Enfermagem",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "selo": "100% GRATUITO",
+   "destaque": "400 VAGAS",
+   "headline": "Técnico em Enfermagem grátis em Santa Luzia",
+   "sub": "Unidade São Benedito · ajuda de custo de {{AJUDA}}",
+   "visual": "Mesmo layout da A04, com foto da unidade de Santa Luzia.",
+   "story": "Igual à A04.",
+   "anuncio": {
+    "titulo": "Enfermagem grátis em Santa Luzia",
+    "descricao": "400 vagas · São Benedito",
+    "texto": "São 400 vagas para o Técnico em Enfermagem 100% gratuito na Escola Técnica Conhecer de Santa Luzia, pelo {{PROGRAMA}}. Toque em Inscreva-se e a gente te ajuda pelo WhatsApp."
+   },
+   "mensagem": "Oi! Quero me inscrever em Enfermagem (Santa Luzia · A05)",
+   "notas": ""
+  },
+  {
+   "id": "A06",
+   "titulo": "Computação Gráfica · BH",
+   "tipo": "Curso",
+   "canal": "Anúncio",
+   "unidades": [
+    "bh"
+   ],
+   "curso": "Computação Gráfica",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "selo": "100% GRATUITO",
+   "destaque": "572 VAGAS",
+   "headline": "Transforme sua criatividade em profissão",
+   "sub": "Técnico em Computação Gráfica · Centro de BH",
+   "visual": "Tela de computador com design colorido; jovem de fone criando. Estética mais jovem e vibrante.",
+   "story": "Tela de computador ocupa o fundo; headline sobreposta no topo; número no centro.",
+   "anuncio": {
+    "titulo": "Computação Gráfica grátis em BH",
+    "descricao": "572 vagas · Centro",
+    "texto": "Gosta de criar? Faça o Técnico em Computação Gráfica 100% gratuito na Escola Técnica Conhecer, no Centro de BH, pelo {{PROGRAMA}}. São 572 vagas. Toque em Inscreva-se."
+   },
+   "mensagem": "Oi! Quero me inscrever em Computação Gráfica (BH · A06)",
+   "notas": ""
+  },
+  {
+   "id": "A07",
+   "titulo": "Radiologia · só 132 vagas",
+   "tipo": "Escassez",
+   "canal": "Anúncio",
+   "unidades": [
+    "sl"
+   ],
+   "curso": "Radiologia",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "selo": "VAGAS LIMITADAS",
+   "destaque": "SÓ 132",
+   "headline": "Técnico em Radiologia grátis",
+   "sub": "Santa Luzia · São Benedito · 100% gratuito",
+   "visual": "Imagem de raio-x estilizada ao fundo; \"SÓ 132\" com tarja de alerta.",
+   "story": "\"SÓ 132 VAGAS\" grande no centro; raio-x ao fundo; botão no rodapé.",
+   "anuncio": {
+    "titulo": "Radiologia grátis: só 132 vagas",
+    "descricao": "Santa Luzia",
+    "texto": "São só 132 vagas para o Técnico em Radiologia 100% gratuito na Escola Técnica Conhecer de Santa Luzia, pelo {{PROGRAMA}}. Toque em Inscreva-se e garanta a ajuda na sua inscrição."
+   },
+   "mensagem": "Oi! Quero me inscrever em Radiologia (Santa Luzia · A07)",
+   "notas": "Conferir idade mínima (ver V05)."
+  },
+  {
+   "id": "A08",
+   "titulo": "Desenvolvimento de Sistemas",
+   "tipo": "Curso",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh"
+   ],
+   "curso": "Desenvolvimento de Sistemas",
+   "fase": "Fases 1 a 4",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "selo": "100% GRATUITO",
+   "destaque": "411 VAGAS",
+   "headline": "Aprenda a programar de graça",
+   "sub": "Técnico em Desenvolvimento de Sistemas · Ribeirão das Neves",
+   "visual": "Código na tela com efeito de luz; elementos de app e site flutuando.",
+   "story": "Código ao fundo; headline no topo; número no centro.",
+   "anuncio": {
+    "titulo": "Aprenda a programar de graça",
+    "descricao": "Técnico em Desenvolvimento de Sistemas",
+    "texto": "Entre na área de tecnologia sem pagar mensalidade: o Técnico em Desenvolvimento de Sistemas da Escola Técnica Conhecer é 100% gratuito pelo {{PROGRAMA}}. Toque em Saiba Mais."
+   },
+   "mensagem": "Oi! Quero me inscrever em Desenvolvimento de Sistemas (A08)",
+   "notas": "2 versões: Neves 411 vagas · BH 420 vagas."
+  },
+  {
+   "id": "A09",
+   "titulo": "Administração + Segurança do Trabalho",
+   "tipo": "Curso",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "sl"
+   ],
+   "curso": "Administração e Segurança do Trabalho",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "selo": "100% GRATUITO",
+   "destaque": "825 VAGAS",
+   "headline": "2 profissões que toda empresa precisa",
+   "sub": "Administração (450) · Segurança do Trabalho (375) · Ribeirão das Neves",
+   "visual": "Tela dividida: escritório de um lado, capacete e EPI do outro.",
+   "story": "Divisão horizontal: Administração em cima, Segurança do Trabalho embaixo.",
+   "anuncio": {
+    "titulo": "Administração ou Segurança do Trabalho grátis",
+    "descricao": "825 vagas · Ribeirão das Neves",
+    "texto": "Escolha sua profissão: Técnico em Administração ou Técnico em Segurança do Trabalho, 100% gratuitos na Escola Técnica Conhecer pelo {{PROGRAMA}}. Toque em Inscreva-se."
+   },
+   "mensagem": "Oi! Quero me inscrever em Administração ou Segurança do Trabalho (A09)",
+   "notas": "Versão Santa Luzia: 68 + 77 = 145 vagas."
+  },
+  {
+   "id": "A10",
+   "titulo": "4 cursos grátis em Ribeirão das Neves",
+   "tipo": "Escassez",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves"
+   ],
+   "curso": "Todos da unidade",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "selo": "VAGAS LIMITADAS POR CURSO",
+   "destaque": "4 CURSOS",
+   "headline": "4 cursos técnicos grátis em Ribeirão das Neves",
+   "sub": "Enfermagem 1.200 · Administração 450 · Desenv. de Sistemas 411 · Segurança do Trabalho 375",
+   "visual": "Lista com ícone de cada curso e o número de vagas ao lado.",
+   "story": "Lista vertical ocupando o centro, um curso por linha.",
+   "anuncio": {
+    "titulo": "4 cursos técnicos grátis em Neves",
+    "descricao": "Vagas limitadas por curso",
+    "texto": "Escolha seu curso técnico 100% gratuito na Escola Técnica Conhecer de Ribeirão das Neves: Enfermagem, Administração, Desenvolvimento de Sistemas ou Segurança do Trabalho. As vagas são limitadas. Toque em Inscreva-se."
+   },
+   "mensagem": "Oi! Quero ver os cursos de Ribeirão das Neves (A10)",
+   "notas": "Também vale como carrossel (capa + 1 card por curso)."
+  },
+  {
+   "id": "A11",
+   "titulo": "5 cursos grátis no Centro de BH",
+   "tipo": "Escassez",
+   "canal": "Anúncio",
+   "unidades": [
+    "bh"
+   ],
+   "curso": "Todos da unidade",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "selo": "VAGAS LIMITADAS POR CURSO",
+   "destaque": "5 CURSOS",
+   "headline": "5 cursos técnicos grátis no Centro de BH",
+   "sub": "Computação Gráfica 572 · Desenv. de Sistemas 420 · Contabilidade 270 · Comércio 250 · Condomínio 247",
+   "visual": "Lista com ícone de cada curso e o número de vagas ao lado.",
+   "story": "Lista vertical ocupando o centro.",
+   "anuncio": {
+    "titulo": "5 cursos técnicos grátis no Centro de BH",
+    "descricao": "Vagas limitadas por curso",
+    "texto": "São 1.759 vagas em 5 cursos técnicos 100% gratuitos na Escola Técnica Conhecer do Centro de BH, pelo {{PROGRAMA}}. Escolha o seu e toque em Inscreva-se."
+   },
+   "mensagem": "Oi! Quero ver os cursos do Centro de BH (A11)",
+   "notas": "Única peça que leva Contabilidade, Comércio e Condomínio para o pago."
+  },
+  {
+   "id": "A12",
+   "titulo": "5 cursos grátis em Santa Luzia",
+   "tipo": "Escassez",
+   "canal": "Anúncio",
+   "unidades": [
+    "sl"
+   ],
+   "curso": "Todos da unidade",
+   "fase": "Fases 1 a 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "selo": "VAGAS LIMITADAS POR CURSO",
+   "destaque": "5 CURSOS",
+   "headline": "5 cursos técnicos grátis em Santa Luzia",
+   "sub": "Enfermagem 400 · Radiologia 132 · Segurança do Trabalho 77 · Administração 68 · Vendas 34",
+   "visual": "Lista com ícone de cada curso e o número de vagas ao lado.",
+   "story": "Lista vertical ocupando o centro.",
+   "anuncio": {
+    "titulo": "5 cursos técnicos grátis em Santa Luzia",
+    "descricao": "Vagas limitadas por curso",
+    "texto": "São 711 vagas em cursos técnicos 100% gratuitos na Escola Técnica Conhecer de Santa Luzia, pelo {{PROGRAMA}}. Escolha o seu e toque em Inscreva-se."
+   },
+   "mensagem": "Oi! Quero ver os cursos de Santa Luzia (A12)",
+   "notas": "Leva Vendas (34 vagas) para o pago."
+  },
+  {
+   "id": "A13",
+   "titulo": "Pais",
+   "tipo": "Pais",
+   "canal": "Anúncio",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Vários",
+   "fase": "Fases 1 a 3",
+   "cta": "Saiba Mais",
+   "status": "Rascunho",
+   "selo": "PARA PAIS E MÃES",
+   "destaque": "PROFISSÃO",
+   "headline": "Seu filho pode sair do ensino médio com uma profissão",
+   "sub": "Curso técnico 100% gratuito · você não paga mensalidade",
+   "visual": "Foto de família (mãe/pai com filho adolescente) sorrindo na frente da escola.",
+   "story": "Foto ocupa a tela inteira; headline no topo; botão no rodapé.",
+   "anuncio": {
+    "titulo": "Seu filho com profissão, sem mensalidade",
+    "descricao": "Curso técnico gratuito",
+    "texto": "Pai, mãe: pelo {{PROGRAMA}} seu filho faz curso técnico 100% gratuito na Escola Técnica Conhecer. Toque em Saiba Mais e a gente explica tudo pelo WhatsApp."
+   },
+   "mensagem": "Oi! Quero inscrever meu filho no Trilhas (A13)",
+   "notas": "Só no conjunto de pais."
+  },
+  {
+   "id": "A14",
+   "titulo": "Contagem regressiva",
+   "tipo": "Urgência",
+   "canal": "Remarketing",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Vários",
+   "fase": "Fases 3 e 4",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "selo": "ÚLTIMOS DIAS",
+   "destaque": "FALTAM 5 DIAS",
+   "headline": "As inscrições para o curso técnico grátis acabam em {{DATA_FIM}}",
+   "sub": "Escola Técnica Conhecer · {{PROGRAMA}}",
+   "visual": "Número grande de contagem regressiva com relógio; cor de alerta.",
+   "story": "Número gigante no centro; data embaixo; botão no rodapé.",
+   "anuncio": {
+    "titulo": "Faltam 5 dias: curso técnico grátis",
+    "descricao": "Acaba em {{DATA_FIM}}",
+    "texto": "Faltam 5 dias para acabar a inscrição do {{PROGRAMA}}. Curso técnico 100% gratuito na Escola Técnica Conhecer. Toque em Inscreva-se e faça agora com a nossa ajuda."
+   },
+   "mensagem": "Oi! Quero me inscrever antes de acabar (A14)",
+   "notas": "Versões: 10 dias (prospecção, 05/11), 5, 3, 1 dia e \"É HOJE\" (remarketing, 11 a 15/11)."
+  },
+  {
+   "id": "A15",
+   "titulo": "Ainda dá tempo",
+   "tipo": "Urgência",
+   "canal": "Remarketing",
+   "unidades": [
+    "neves",
+    "bh",
+    "sl"
+   ],
+   "curso": "Vários",
+   "fase": "Fase 4 · 11 a 15/11",
+   "cta": "Inscreva-se",
+   "status": "Rascunho",
+   "selo": "AINDA DÁ TEMPO",
+   "destaque": "TRAVOU?",
+   "headline": "Travou na inscrição? A gente te ajuda a terminar",
+   "sub": "Atendimento no WhatsApp até {{DATA_FIM}}",
+   "visual": "Print estilizado de conversa no WhatsApp com a equipe da Conhecer.",
+   "story": "Conversa do WhatsApp ocupando o centro; headline no topo.",
+   "anuncio": {
+    "titulo": "Ainda dá tempo de se inscrever",
+    "descricao": "Até {{DATA_FIM}}",
+    "texto": "Começou a inscrição e travou? A equipe da Escola Técnica Conhecer termina com você pelo WhatsApp. O curso técnico é 100% gratuito. Toque em Inscreva-se."
+   },
+   "mensagem": "Oi! Travei na inscrição do Trilhas e preciso de ajuda (A15)",
+   "notas": "Público: quem chamou no WhatsApp e não concluiu (lista do CRM) + engajados."
+  }
+ ],
+ "organico": [
+  {
+   "quando": "15/10 (qui)",
+   "formato": "Reels",
+   "tema": "V13 · Passo a passo da inscrição (fixar no perfil)",
+   "objetivo": "Ensinar e gerar confiança"
+  },
+  {
+   "quando": "15/10 (qui)",
+   "formato": "Carrossel",
+   "tema": "O que é o {{PROGRAMA}} em 6 cards: quem pode, é grátis, ajuda de custo, prazo",
+   "objetivo": "Informar"
+  },
+  {
+   "quando": "Todo dia",
+   "formato": "Stories",
+   "tema": "Enquete \"qual curso você quer?\", caixa de perguntas, contagem até {{DATA_FIM}}",
+   "objetivo": "Engajar e alimentar o remarketing"
+  },
+  {
+   "quando": "Todo dia",
+   "formato": "Status do WhatsApp",
+   "tema": "Arte do dia com os cursos e o link do WhatsApp do Trilhas",
+   "objetivo": "Alcançar a base de contatos"
+  },
+  {
+   "quando": "16/10 (sex)",
+   "formato": "Disparo para escolas",
+   "tema": "Kit para diretores e grupos de pais (arte + texto pronto) nas regiões das 3 unidades",
+   "objetivo": "Indicação gratuita"
+  },
+  {
+   "quando": "17/10 (sáb)",
+   "formato": "Live (20 min)",
+   "tema": "Tire suas dúvidas sobre o Trilhas com a coordenação",
+   "objetivo": "Responder objeções; corte vira Reels"
+  },
+  {
+   "quando": "20/10 (ter)",
+   "formato": "Reels",
+   "tema": "V14 · Tour pela unidade de Ribeirão das Neves",
+   "objetivo": "Mostrar a estrutura"
+  },
+  {
+   "quando": "22/10 (qui)",
+   "formato": "Carrossel",
+   "tema": "Cursos e vagas de Ribeirão das Neves (1 card por curso)",
+   "objetivo": "Informar"
+  },
+  {
+   "quando": "24/10 (sáb)",
+   "formato": "Reels",
+   "tema": "Corte da live: as 3 perguntas mais feitas",
+   "objetivo": "Quebrar objeções"
+  },
+  {
+   "quando": "27/10 (ter)",
+   "formato": "Reels",
+   "tema": "V14 · Tour pela unidade do Centro de BH",
+   "objetivo": "Mostrar a estrutura"
+  },
+  {
+   "quando": "29/10 (qui)",
+   "formato": "Reels",
+   "tema": "V15 · Bastidores da equipe ajudando nas inscrições",
+   "objetivo": "Prova social real"
+  },
+  {
+   "quando": "31/10 (sáb)",
+   "formato": "Carrossel",
+   "tema": "Documentos que você precisa ter em mãos",
+   "objetivo": "Reduzir travas na inscrição"
+  },
+  {
+   "quando": "03/11 (ter)",
+   "formato": "Reels",
+   "tema": "V14 · Tour pela unidade de Santa Luzia",
+   "objetivo": "Mostrar a estrutura"
+  },
+  {
+   "quando": "05/11 (qui)",
+   "formato": "Live (20 min)",
+   "tema": "Última live antes do prazo: inscrição ao vivo com um aluno",
+   "objetivo": "Converter indecisos"
+  },
+  {
+   "quando": "06/11 (sex)",
+   "formato": "Disparo para escolas",
+   "tema": "Lembrete: faltam 10 dias",
+   "objetivo": "Indicação gratuita"
+  },
+  {
+   "quando": "07/11 (sáb)",
+   "formato": "Carrossel",
+   "tema": "3 erros que fazem perder a inscrição",
+   "objetivo": "Urgência + educação"
+  },
+  {
+   "quando": "11 a 15/11",
+   "formato": "Stories + Feed",
+   "tema": "Contagem regressiva diária (5, 4, 3, 2, 1, É HOJE)",
+   "objetivo": "Urgência"
+  },
+  {
+   "quando": "11 e 14/11",
+   "formato": "Disparo para a base",
+   "tema": "Mensagem para ex-leads e alunos indicarem amigos (respeitando a LGPD)",
+   "objetivo": "Indicação"
+  }
+ ],
+ "producao": [
+  {
+   "quando": "14/10 (qua)",
+   "entrega": "Samuel aprova o planejamento. Brota monta as campanhas e produz A01, A02, A04, A06, A07 e A10 a A12 (feed + story).",
+   "resp": "Brota + Samuel",
+   "status": "Em andamento"
+  },
+  {
+   "quando": "15/10 (qui)",
+   "entrega": "Artes no ar assim que o programa abrir. Gravar V01, V02, V03 e a tela do site para V13. Publicar V13 e o carrossel no orgânico.",
+   "resp": "Conhecer grava · Brota edita",
+   "status": "A fazer"
+  },
+  {
+   "quando": "16/10 (sex)",
+   "entrega": "V01, V02 e V03 editados e no ar. Produzir A03, A05, A08, A09 e A13. Enviar o kit para as escolas.",
+   "resp": "Brota",
+   "status": "A fazer"
+  },
+  {
+   "quando": "17 e 18/10",
+   "entrega": "Gravar V04 a V10 e o tour de Ribeirão das Neves (V14). Live 1.",
+   "resp": "Conhecer grava",
+   "status": "A fazer"
+  },
+  {
+   "quando": "20/10 (ter)",
+   "entrega": "V04 a V10 no ar. Fim da fase de teste: primeira leitura de resultados e corte dos perdedores.",
+   "resp": "Brota",
+   "status": "A fazer"
+  },
+  {
+   "quando": "27/10 (ter)",
+   "entrega": "Gravar V15 (bastidores) e V11 (urgência) com as versões de dias.",
+   "resp": "Conhecer grava · Brota edita",
+   "status": "A fazer"
+  },
+  {
+   "quando": "03/11 (ter)",
+   "entrega": "V11 e A14 (versão 10 dias) prontos para a fase de aceleração.",
+   "resp": "Brota",
+   "status": "A fazer"
+  },
+  {
+   "quando": "10/11 (ter)",
+   "entrega": "Remarketing montado: públicos, lista do CRM para exclusão, V12, A14 e A15 aprovados.",
+   "resp": "Brota + equipe do CRM",
+   "status": "A fazer"
+  },
+  {
+   "quando": "11 a 15/11",
+   "entrega": "Reta final: revisão de verba duas vezes por dia e atualização diária da contagem regressiva.",
+   "resp": "Brota",
+   "status": "A fazer"
+  }
+ ],
+ "pendencias": [
+  {
+   "item": "Valor da ajuda de custo na 7ª edição",
+   "porque": "Aparece em quase todos os criativos",
+   "resp": "Samuel",
+   "ok": false
+  },
+  {
+   "item": "Data e horário exatos de encerramento (15/11?)",
+   "porque": "Urgência, contagem regressiva e verba",
+   "resp": "Samuel",
+   "ok": false
+  },
+  {
+   "item": "Quem pode se inscrever nesta edição (séries, EJA, quem já concluiu, quem já fez Trilhas)",
+   "porque": "Segmentação e textos (V08, A13)",
+   "resp": "Samuel",
+   "ok": false
+  },
+  {
+   "item": "Vagas por curso confirmadas no catálogo oficial",
+   "porque": "Números de vagas em todas as peças",
+   "resp": "Samuel",
+   "ok": false
+  },
+  {
+   "item": "Idade mínima para Radiologia",
+   "porque": "Público do V05 e da A07",
+   "resp": "Samuel",
+   "ok": false
+  },
+  {
+   "item": "Ementas de Computação Gráfica e Desenvolvimento de Sistemas",
+   "porque": "V04, V06, A06, A08",
+   "resp": "Samuel",
+   "ok": false
+  },
+  {
+   "item": "Logo, cores, fotos e vídeos reais das 3 unidades e dos laboratórios",
+   "porque": "Todas as artes e vídeos",
+   "resp": "Samuel",
+   "ok": false
+  },
+  {
+   "item": "Quem grava os vídeos e autorizações de imagem (responsável, se menor)",
+   "porque": "V01 a V15",
+   "resp": "Samuel",
+   "ok": false
+  },
+  {
+   "item": "Escala de atendimento em fins de semana e feriados (02/11 Finados; 15/11 é domingo e feriado)",
+   "porque": "O pico de mensagens vem na reta final",
+   "resp": "Samuel",
+   "ok": false
+  },
+  {
+   "item": "Exportação diária do CRM: quem chamou e quem concluiu (telefones)",
+   "porque": "Remarketing e exclusão de quem já se inscreveu",
+   "resp": "Brota + equipe do CRM",
+   "ok": false
+  },
+  {
+   "item": "Forma de pagamento e limite da conta de anúncios para R$ 12 mil no mês",
+   "porque": "Evitar anúncio parado por pagamento",
+   "resp": "Samuel",
+   "ok": false
+  },
+  {
+   "item": "Data de início das aulas",
+   "porque": "Vídeo de tour (V14)",
+   "resp": "Samuel",
+   "ok": false
+  }
+ ]
+}
